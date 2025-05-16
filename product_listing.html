@@ -122,8 +122,11 @@
                                     </div>
                                 </div>
                                 
-                                <button class="btn btn_global_green" onclick="justDrop('cart_drop', 'roter2', this)">
-                                    <img src="./assets/img/cross_x_cart.svg" alt="" class="img-fluid">
+                                <button class="btn btn_global_green mx-auto">
+                                    <p class="btn_global_text">Checkout</p>
+                                    <span class="btn_global_green_inner">
+                                        <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                    </span>
                                 </button>
                             </div>
                         </div>
@@ -134,7 +137,7 @@
                 <div class="header_mobo_main">
                     <div class="header_mobo_left">
                         <div class="cart_menu">
-                            <button class="btn btn_header_drop pos_rel p-0" onclick="justDrop('cart_drop', 'roter3', this)">
+                            <button class="btn btn_header_drop pos_rel p-0" onclick="justDrop('cart_drop', 'roter3', this)" style="border: 0px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M15.6 8.34215C15.6 10.3304 13.9882 11.9422 12 11.9422C10.0118 11.9422 8.40002 10.3304 8.40002 8.34215M4.7273 20.9422H19.2728C20.5581 20.9422 21.6 19.9196 21.6 18.6581L20.1091 5.34212C20.1091 4.08069 19.0672 3.05811 17.7818 3.05811H5.9273C4.64198 3.05811 3.60002 4.08069 3.60002 5.34212L2.40002 18.6581C2.40002 19.9196 3.44198 20.9422 4.7273 20.9422Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -197,239 +200,152 @@
             </div>
         </div>
         <div class="header_cart_mobo_main_slide" style="display: none;">
-            <button class="btn btn_cart_back" onclick="closeMobileCart()">
-                <img src="./assets/img/cart_back_icon.svg" alt="" class="img-fluid cart_back_icon">
-                Return to Menu
-            </button>
+            
             <div class="header_cart_main_mobo">
                 <h1 class="cart_title">Shopping Cart</h1>
                 <div class="cart_item_outer">
                     <div class="cart_item">
-                        <p class="cart_item_name">Blogging Traffic System</p>
-                        <div class="cart_item_inner_right">
-                            <p class="cart_item_qty">x1</p>
-                            <div class="cart_item_inner_grp">
-                                <p class="cart_item_price">£189.50</p>
-                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
                             </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
                         </div>
                     </div>
                     <div class="cart_item">
-                        <p class="cart_item_name">Blogging Traffic System</p>
-                        <div class="cart_item_inner_right">
-                            <p class="cart_item_qty">x1</p>
-                            <div class="cart_item_inner_grp">
-                                <p class="cart_item_price">£189.50</p>
-                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
                             </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
                         </div>
                     </div>
                     <div class="cart_item">
-                        <p class="cart_item_name">Blogging Traffic System</p>
-                        <div class="cart_item_inner_right">
-                            <p class="cart_item_qty">x1</p>
-                            <div class="cart_item_inner_grp">
-                                <p class="cart_item_price">£189.50</p>
-                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="cart_item">
-                        <p class="cart_item_name">Blogging Traffic System</p>
-                        <div class="cart_item_inner_right">
-                            <p class="cart_item_qty">x1</p>
-                            <div class="cart_item_inner_grp">
-                                <p class="cart_item_price">£189.50</p>
-                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
                             </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
                         </div>
                     </div>
-                    <div class="cart_item">
-                        <p class="cart_item_name">Blogging Traffic System</p>
-                        <div class="cart_item_inner_right">
-                            <p class="cart_item_qty">x1</p>
-                            <div class="cart_item_inner_grp">
-                                <p class="cart_item_price">£189.50</p>
-                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
-                            </div>
-                        </div>
+                    <div class="cart_item_total">
+                        <p class="cart_total_text">RRP</p>
+                        <p class="cart_total_text">£379.00</p>
                     </div>
-                    <div class="cart_item">
-                        <p class="cart_item_name">Blogging Traffic System</p>
-                        <div class="cart_item_inner_right">
-                            <p class="cart_item_qty">x1</p>
-                            <div class="cart_item_inner_grp">
-                                <p class="cart_item_price">£189.50</p>
-                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
-                            </div>
-                        </div>
+
+                    <div class="cart_item_total2">
+                        <p class="cart_total_text1">Total</p>
+                        <p class="cart_total_text1">£379.00</p>
                     </div>
-                </div>
-                <div class="cart_splitter"></div>
-                <div class="cart_item">
-                    <p class="cart_total_text">Subtotal</p>
-                    <p class="cart_total_text">£379.00</p>
                 </div>
                 <div class="cart_btn_grp">
-                    <button class="btn btn_global_trans w-100">Continue Shopping</button>
-                    <button class="btn btn_global w-100">secure Checkout</button>
+                    <button class="btn btn_global_dark" onclick="closeMobileCart()">
+                        <p class="btn_global_text2">Close Cart</p>
+                        <span class="btn_global_dark_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                    <button class="btn btn_global_green">
+                        <p class="btn_global_text">Checkout</p>
+                        <span class="btn_global_green_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <section>
-        <div class="container">
-
-            <button class="btn btn_global">
-                your text
-            </button>
-
-            <br>
-            <br>
-
-            <button class="btn btn_global2">
-                your text
-            </button>
-
-            <br>
-            <br>
-
-
-            <button class="btn btn_global3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                    <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-
-            <br>
-            <br>
-
-
-            <button class="btn btn_circle">
-                <span class="btn_circle_inner">
-                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
-                </span>
-            </button>
-
-            <br>
-            <br>
-
-            <button class="btn btn_global_green">
-                <p class="btn_global_text">your text</p>
-                <span class="btn_global_green_inner">
-                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
-                </span>
-            </button>
-
-            <br>
-            <br>
-            
-            <button class="btn btn_global_green_2">
-                <p class="btn_global_text3">your text</p>
-                <span class="btn_global_green_2_inner">
-                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
-                </span>
-            </button>
-
-            <br>
-            <br>
-            
-            <button class="btn btn_global_dark">
-                <p class="btn_global_text2">your text</p>
-                <span class="btn_global_dark_inner">
-                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
-                </span>
-            </button>
-
-            <br>
-            <br>
-
-            <!-- Global Card -->
-            <!-- not to change global_card class name -->
-            <div class="global_card">
-                <img src="./assets/img/gc_img.png" alt="" class="img-fluid global_card_image">
-                <div class="gc_content_box">
-                    <h5 class="gc_title">Tech & Gadgets</h5>
-                    <p class="gc_subtitle">Smart picks for everyone.</p>
-                </div>
-                <button class="btn btn_circle">
-                    <span class="btn_circle_inner">
-                        <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
-                    </span>
-                </button>
-
-                <!-- above elements & class names can be changed or removed -->
-                
-                <!-- below elements & class names cannot be changed or removed -->
-
-                <div class="gc_star star1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M14.1456 19.3288L9.42504 12.019L0.98746 14.1458L8.29718 9.42521L6.17046 0.987626L10.891 8.29735L19.3286 6.17062L12.0189 10.8912L14.1456 19.3288Z" fill="#242323" fill-opacity="0.1"/>
-                    </svg>
-                </div>
-                <div class="gc_star star2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-                        <path opacity="0.1" d="M13.2962 18.0271L8.85083 11.1435L0.905066 13.1462L7.78871 8.70083L5.78595 0.755066L10.2313 7.63871L18.1771 5.63595L11.2935 10.0814L13.2962 18.0271Z" fill="#242323"/>
-                    </svg>
-                </div>
-                <div class="gc_star star3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-                        <path opacity="0.1" d="M16.9283 14.164L9.15226 10.2591L2.95963 16.372L6.86453 8.5959L0.751666 2.40328L8.52775 6.30818L14.7204 0.195312L10.8155 7.9714L16.9283 14.164Z" fill="#242323"/>
-                    </svg>
+    
+    <section class="product_listing">
+        <!-- Product Listing Section One Start -->
+        <div class="pls1">
+            <div class="pls1_inner">
+                <div class="container">
+                    <div class="pls1_content">
+                        <h1 class="pls1_title">Shop All</h1>
+                        <p class="pls1_subtitle">
+                            Why pay full price when you can save up to
+                            25% on gift cards from your favorite brands?
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!-- Global Card End -->
+            <div class="pls1_l_cut"></div>
+            <div class="pls1_c_cut"></div>
+            <div class="pls1_r_cut"></div>
+        </div>
+        <!-- Product Listing Section One End -->
 
 
-            <br>
-            <br>
 
 
-            <div class="product_card">
-                <div class="product_card_top">
-                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
-                        <div class="product_card_discount_box">
-                            <p class="pcd_text">UP TO 10% OFF</p>
+
+        <div class="pls2">
+            <div class="container">
+                <div class="pls2_main">
+                    <div class="pls2_l">
+                        <div class="pls2_l_main">
+
                         </div>
                     </div>
-                </div>
-                <div class="product_card_footer">
-                    <div class="pcf_l">
-                        <p class="product_card_title">Drummond Golf</p>
-                        <p class="product_card_subtitle">26 cards</p>
-                    </div>
-                    <div class="pcf_r">
-                        <button class="btn btn_global3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
+                    <div class="pls2_r">
+                        <div class="pls2_r_top"></div>
+                        <div class="pls2_r_bottom"></div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
 
     <footer class="footer">
         <div class="footer_frame">
