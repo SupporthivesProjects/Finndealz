@@ -95,6 +95,64 @@
     .desktop_none {
         display: block;
     }
+
+
+    .pls1_c_cut {
+        width: 200px;
+        height: 14px;
+        bottom: 17px;
+    }
+    .pls1_r_cut {
+        width: 100px;
+        height: 16px;
+    }
+    .pls1_l_cut {
+        width: 100px;
+        height: 16px;
+    }
+    .pls1 {
+        background: #242323;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 30.5px;
+        position: relative;
+    }
+    .pls1_title {
+        color: var(--Charcoal, #242323);
+        text-align: center;
+
+        /* Heading/H2 */
+        font-family: 'Satoshi';
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 48.4px */
+        letter-spacing: -1.32px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .pls1_subtitle {
+        color: var(--P, #7E8492);
+        text-align: center;
+
+        /* P/Standard */
+        font-family: 'Satoshi';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin-bottom: 0px;
+    }
+    .pls1_content {
+        max-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pls1_inner {
+        border-radius: 0px;
+    }
+
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {
