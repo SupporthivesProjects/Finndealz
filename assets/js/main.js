@@ -114,6 +114,25 @@ function subQty(inp_id) {
     }
 }
 
+function showFilterDrop(el) {
+    const initial = document.getElementById('initial');
+    const extecial = document.getElementById('extecial');
+    const pls2_l_main = document.querySelector('.pls2_l_main');
+
+    if (initial.classList.contains('d-none')) {
+        initial.classList.remove('d-none');
+        extecial.classList.add('d-none');
+        pls2_l_main.style.display = 'none';
+        el.style.top = '0px';
+    } else {
+        extecial.classList.remove('d-none');
+        initial.classList.add('d-none');
+        pls2_l_main.style.display = 'flex';
+        el.style.top = '16px';
+    }
+}
+
+
 // $(document).ready(function () {
 //     $(window).on('scroll', function () {
 //         const scrollTop = window.scrollY;
