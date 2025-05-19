@@ -327,14 +327,29 @@
         <div class="login_1">
             <div class="login_main">
                 <div class="div_for_vid_login">
-                <video autoplay muted loop src="./assets/img/1920 - Login.mp4" class="video_login"></video>
+                    <div class="">
+                        <video class="bg-image mobile_none vid_login" loop="" muted="" autoplay=""
+                            style="object-fit: cover;">
+                            <source src="./assets/img/login_vid.mp4" type="video/mp4">
+                        </video>
+
+                        <video class="bg-image desktop_none vid_login" loop="" muted="" autoplay=""
+                            style="object-fit: cover;">
+                            <source src="./assets/img/login_vid_mo.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
                 <div class="login_inner">
                     <h3 class="heading_login">Welcome back</h3>
                     <div class="div_login_input">
                         <input type="text" class="input_rp" placeholder="Email Address">
-                        <input type="text" class="input_rp" placeholder="Password">
-                        <p class="para_login">Forgot Your Password?</p>
+                        <div class="w-100">
+                            <input type="password" class=" input_rp w-100" placeholder="Password" />
+                            <img src="./assets/img/open_eye.png" alt="" type="button" class="img-fluid eye_icon"
+                                onclick="togglePassword('password', this)">
+                        </div>
+                        <p class="para_login" data-bs-toggle="modal" data-bs-target="#exampleModal">Forgot Your
+                            Password?</p>
                     </div>
                     <button class="btn btn_global_green">
                         <p class="btn_global_text">Login</p>
@@ -344,12 +359,56 @@
                     </button>
                     <p class="para_login2">Don't have an account? <span>Sign up <br>here</span></p>
                 </div>
+                <div class="div_login_bottom_left mobile_none">
+
+                </div>
+                <div class="div_login_bottom_right mobile_none"></div>
             </div>
-            <div class="pls1_l_cut mobile_none"></div>
-            <div class="rp_middle mobile_none"></div>
-            <div class="pls1_r_cut mobile_none"></div>
+            <div class="pls1_l_cut"></div>
+            <div class="pls1_r_cut"></div>
         </div>
     </section>
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mod_dia">
+            <div class="modal-content modal_new">
+                <div class="">
+                    <div class="div_modal_main">
+                        <img type="button" src="./assets/img/close_modal.png" alt="" class="img-fluid close_modal"
+                            data-bs-dismiss="modal" aria-label="Close">
+
+                        <div class="div1_inner_modal">
+                            <div class="div_heading_modal">
+                                <h3 class="heading_modal">Forgot your password?</h3>
+                                <p class="para_modal">No worries, we’ve got you. Enter your email address below and
+                                    we’ll send you a link to reset your password.</p>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Email Address" class="input_rp">
+                        <div class="c-checkbox_s2">
+                            <div class="c-div_s2">
+                                <label class="d-flex justify-content-center justify-content-lg-start">
+                                    <input type="checkbox" id="terms" name="terms">
+                                    <label for="terms"></label>
+                                </label>
+                            </div>
+                            <div class="c-text_s2">
+                                <p class="login_strong_s2">By ticking this box, you agree to the <a href="">Terms &
+                                        Conditions</a> & <a href="">Privacy Policy</a></p>
+                            </div>
+                        </div>
+                        <div class="div_subbtn_modal">
+                            <img src="./assets/img/robo.png" alt="" class="robo_img_modal">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer_frame">
