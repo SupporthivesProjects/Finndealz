@@ -470,17 +470,14 @@ input[type=radio] {
     border-radius: 20px;
     border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
     background: var(--Grayscale-White, #FFF);
-
-    /* Card */
     box-shadow: 0px 44px 57.3px 0px rgba(0, 0, 0, 0.15), 0px -2px 57.3px 0px rgba(0, 0, 0, 0.06);
 }
+
 .modal_new1 {
     width: 679px;
     border-radius: 20px;
     border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
     background: var(--Grayscale-White, #FFF);
-
-    /* Card */
     box-shadow: 0px 44px 57.3px 0px rgba(0, 0, 0, 0.15), 0px -2px 57.3px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -555,7 +552,7 @@ input[type=radio] {
 }
 
 .para_modal1 {
-     color: var(--P, #7E8492);
+    color: var(--P, #7E8492);
     text-align: center;
 
     /* P/Standard */
@@ -568,6 +565,7 @@ input[type=radio] {
     margin-bottom: 0%;
     width: 571px;
 }
+
 .div_subbtn_modal {
     display: flex;
     justify-content: space-between;
@@ -786,6 +784,7 @@ input[type=radio] {
     .modal_new {
         width: 100%;
     }
+
     .modal_new1 {
         width: 100%;
     }
