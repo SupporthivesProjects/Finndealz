@@ -330,35 +330,63 @@
                     <div class="">
                         <video class="bg-image mobile_none vid_login" loop="" muted="" autoplay=""
                             style="object-fit: cover;">
-                            <source src="./assets/img/login_vid.mp4" type="video/mp4">
+                            <source src="./assets/img/Signp.mp4" type="video/mp4">
                         </video>
 
                         <video class="bg-image desktop_none vid_login" loop="" muted="" autoplay=""
                             style="object-fit: cover;">
-                            <source src="./assets/img/login_vid_mo.mp4" type="video/mp4">
+                            <source src="./assets/img/Signup_mo.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
-                <div class="login_inner">
-                    <h3 class="heading_login">Welcome back</h3>
+                <div class="signup_inner">
+                    <h3 class="heading_login">Create an account</h3>
                     <div class="div_login_input">
-                        <input type="text" class="input_rp" placeholder="Email Address">
-                        <div class="password_div_login w-100">
-                            <input type="password" id="password" placeholder="Password" class="input_rp w-100">
-                            <span class="toggle-visibility" onclick="togglePassword()">
-                                <img src="./assets/img/open_eye.png" alt="" class="img-fluid eye_icon">
-                            </span>
+                        <div class="inner_input_singup">
+                            <input type="text" class="input_rp" placeholder="First Name">
+                            <input type="text" class="input_rp" placeholder="Last Name">
                         </div>
-                        <p class="para_login" data-bs-toggle="modal" data-bs-target="#exampleModal">Forgot Your
-                            Password?</p>
+                        <div class="inner_input_singup">
+                            <input type="text" class="input_rp" placeholder="Phone Number">
+                            <input type="text" class="input_rp" placeholder="Email Address">
+                        </div>
+                        <div class="inner_input_singup">
+                            <div class="password_div_login w-100">
+                                <input type="password" id="password" placeholder="Password" class="input_rp w-100">
+                                <span class="toggle-visibility" onclick="togglePassword()">
+                                    <img src="./assets/img/open_eye.png" alt="" class="img-fluid eye_icon">
+                                </span>
+                            </div>
+                            <div class="password_div_login w-100">
+                                <input type="password" id="password" placeholder="Password" class="input_rp w-100">
+                                <span class="toggle-visibility" onclick="togglePassword()">
+                                    <img src="./assets/img/open_eye.png" alt="" class="img-fluid eye_icon">
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <button class="btn btn_global_green">
-                        <p class="btn_global_text">Login</p>
-                        <span class="btn_global_green_inner">
-                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
-                        </span>
-                    </button>
-                    <p class="para_login2">Don't have an account? <span>Sign up <br>here</span></p>
+                    <div class="c-checkbox_s2">
+                        <div class="c-div_s2">
+                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                <input type="checkbox" id="terms" name="terms">
+                                <label for="terms"></label>
+                            </label>
+                        </div>
+                        <div class="c-text_s2">
+                            <p class="login_strong_s2">By ticking this box, you agree to the <a href="">Terms &
+                                    Conditions</a> & <a href="">Privacy Policy</a></p>
+                        </div>
+                    </div>
+                    <div class="sign_robo_div">
+                        <img src="./assets/img/robo.png" alt="" class="robo_img">
+                        <button class="btn btn_global_green" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <p class="btn_global_text">Login</p>
+                            <span class="btn_global_green_inner">
+                                <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                            </span>
+                        </button>
+                    </div>
+                    <p class="para_login2">Already have an account? <span>Login here</span></p>
                 </div>
                 <div class="div_login_bottom_left mobile_none">
 
@@ -375,38 +403,22 @@
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog mod_dia">
-            <div class="modal-content modal_new">
+            <div class="modal-content modal_new1">
                 <div class="">
-                    <div class="div_modal_main">
+                    <div class="div_modal_main1">
                         <img type="button" src="./assets/img/close_modal.png" alt="" class="img-fluid close_modal"
                             data-bs-dismiss="modal" aria-label="Close">
 
                         <div class="div1_inner_modal">
                             <div class="div_heading_modal">
-                                <h3 class="heading_modal">Forgot your password?</h3>
-                                <p class="para_modal">No worries, we’ve got you. Enter your email address below and
-                                    we’ll send you a link to reset your password.</p>
+                                <h3 class="heading_modal">Thank you for registering</h3>
+                                <p class="para_modal1">Welcome to Finndealz! You’re all set to start shopping smarter and
+                                    saving more. Check your inbox for a quick confirmation.</p>
                             </div>
                         </div>
-                        <input type="text" placeholder="Email Address" class="input_rp">
-                        <div class="c-checkbox_s2">
-                            <div class="c-div_s2">
-                                <label class="d-flex justify-content-center justify-content-lg-start">
-                                    <input type="checkbox" id="terms" name="terms">
-                                    <label for="terms"></label>
-                                </label>
-                            </div>
-                            <div class="c-text_s2">
-                                <p class="login_strong_s2">By ticking this box, you agree to the <a href="">Terms &
-                                        Conditions</a> & <a href="">Privacy Policy</a></p>
-                            </div>
-                        </div>
-                        <div class="div_subbtn_modal">
-                            <img src="./assets/img/robo.png" alt="" class="robo_img_modal">
-                            <button class="btn btn_global4 ">
-                                submit request
-                            </button>
-                        </div>
+                        <button class="btn btn_global4 ">
+                                login here
+                        </button>
                     </div>
                 </div>
             </div>

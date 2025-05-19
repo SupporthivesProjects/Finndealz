@@ -332,8 +332,8 @@ header {
     padding: 0px;
     margin-bottom: 0px;
 }
-input#inc_dec_num[type=number]::-webkit-inner-spin-button,
-input#inc_dec_num[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -463,6 +463,36 @@ input#inc_dec_num[type=number]::-webkit-outer-spin-button {
     text-transform: capitalize;
 }
 .btn_global2:hover {
+    border-radius: 53px;
+    border: 1.5px solid var(--Charcoal, #242323);
+    background: var(--Gradient, linear-gradient(266deg, #C4EB80 3.86%, #94D0C1 97.53%));
+    padding: 12px 32px;
+    color: var(--Charcoal, #242323);
+
+    /* Heading/Btn */
+    font-family: 'Satoshi';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.btn_global4 {
+    border-radius: 53px;
+    border: 1.5px solid var(--Charcoal, #F1F1F1);
+    background: var(--Gradient, linear-gradient(266deg, #8AB820 3.86%, #8AB820 97.53%));
+    padding: 12px 32px;
+    color: var(--Lime-Green, #242323);
+
+    /* Heading/Btn */
+    font-family: 'Satoshi';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.btn_global4:hover {
     border-radius: 53px;
     border: 1.5px solid var(--Charcoal, #242323);
     background: var(--Gradient, linear-gradient(266deg, #C4EB80 3.86%, #94D0C1 97.53%));
@@ -982,9 +1012,9 @@ footer.footer {
     right: 8px;
 }
 .product_card_image {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-size: cover!important;
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
     position: relative;
     height: 159px;
     width: 100%;
