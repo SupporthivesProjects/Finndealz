@@ -144,3 +144,34 @@ function showFilterDrop(el) {
 //     });
 // });
 
+function dash_drop_mob(drp_div_id, rote_id, text_name, img_num, el) {
+    const a = document.getElementById(drp_div_id);
+    const b = document.getElementById(rote_id);
+    const c = document.getElementById("dash_drop_lt_text");
+    const d = document.getElementById("dash_drop_lt_im");
+    const img_path = "./assets/img/ddic";
+
+    if (a.classList.contains('d-none')) {
+        a.classList.remove('d-none');
+        b.style.rotate = "180deg";
+    } else {
+        a.classList.add('d-none');
+        b.style.rotate = "0deg";
+
+        if (typeof text_name !== "undefined") {
+            c.innerText = text_name;
+        }
+
+        if (typeof img_num !== "undefined") {
+            d.src = `${img_path}${img_num}.svg`;
+        }
+
+        document.querySelectorAll('.btn_dash_drop_inner').forEach(btn => {
+            btn.classList.remove("active");
+        });
+        if (el) {
+            el.classList.add("active");
+        }
+    }
+}
+
