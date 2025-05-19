@@ -84,6 +84,21 @@
     line-height: normal;
     text-transform: capitalize;
 }
+.green_btn:hover {
+    border-radius: 53px;
+    border: 1.5px solid var(--Charcoal, #242323);
+    background: var(--Gradient, linear-gradient(266deg, #C4EB80 3.86%, #94D0C1 97.53%));
+    padding: 12px 32px;
+    color: var(--Charcoal, #242323);
+
+    /* Heading/Btn */
+    font-family: 'Satoshi';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
 
 .btn_width {
     width: 224px;
@@ -1490,7 +1505,7 @@ input[type=radio] {
 .about_5 {
     gap: 79px;
     position: relative;
-    padding: 64px 24px;
+    padding: 64px 32px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1527,7 +1542,7 @@ input[type=radio] {
     background: var(--Charcoal, #242323);
 }
 
-.top_con {
+.top_content {
     color: var(--Grayscale-White, #FFF);
     leading-trim: both;
     text-edge: cap;
@@ -1631,7 +1646,7 @@ input[type=radio] {
     align-items: flex-start;
     gap: 21px;
 }
-.rightside p {
+.rightside_pp {
     color: var(--P, #7E8492);
 
     /* P/Standard */
@@ -1648,6 +1663,11 @@ input[type=radio] {
     align-items: flex-start;
     gap: 16px;
 }
+.external_width {
+    max-width: 571px;
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 700px) {
     .mobile_none {
@@ -2234,6 +2254,7 @@ input[type=radio] {
         position: absolute;
         bottom: 0px;
         left: 0px;
+        right: 0px;
     }
 
     .sg_4 {
@@ -2323,7 +2344,128 @@ input[type=radio] {
         background-position: top center;
         background-repeat: no-repeat;
     }
+    .about_5 {
+        flex-direction: column;
+        padding: 0px 12px 40px 12px;
+        gap: 40px;
+    }
+    .left_ab5 {
+            height: 335px;
+    }
+    .right_ab5 {
+        gap: 24px;
+    }
 
+    .top_ab5 {
+        align-items: center;
+    }
+    .ab5_pp {
+        text-align: center;
+    }
+    .ab5_tt {
+        color: var(--Charcoal, #242323);
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        
+        /* Heading/H3 */
+        font-family: Satoshi;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.96px;
+        text-transform: capitalize;
+    }
+    .ab5_tt span {
+        color: var(--Lime-Green, #8AB820);
+        leading-trim: both;
+        text-edge: cap;
+
+        /* Heading/H3 */
+        font-family: Satoshi;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.96px;
+        text-transform: capitalize;
+    }
+    .right_ab5 {
+        padding: 0px 12px;
+        align-items: center;
+    }
+    .middle_ab5 {
+        flex-direction: column;
+    }
+    .rightside {
+        align-items: center;
+    }
+    .rightside_pp  {
+        text-align: center;
+    }
+    .top_content {
+        color: var(--Grayscale-White, #FFF);
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Satoshi;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height:  33.652px; /* 250% */
+        margin-bottom: 8px;
+        width: 125.291px;
+    }
+    .bottom_con {
+        color: var(--Grayscale-White, #FFF);
+        text-align: center;
+        
+        /* P/Extra Small */
+        font-family: Satoshi;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 19.5px */
+    }
+    .video_content_div {
+        padding: 15px 13px 12px 13px;
+    }
+    .video_outer_border {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        padding-top: 8px;
+        padding-left: 8px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 10px;
+        background: #fff;
+    }
+    .contact_phone_whitw {
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mid_logo_mob {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .left_logo_mob {
+        position: absolute;
+        left: 3%;
+        top: 20px;
+    }
+    .right_logo_mob {
+        position: absolute;
+        right: 3%;
+        top: 20px;
+    }
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {}
