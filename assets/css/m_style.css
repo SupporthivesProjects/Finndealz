@@ -54,7 +54,7 @@
 }
 .pls1_l_cut {
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     left: 0px;
     background: url(../img/pls1_l_cut_white.svg);
     background-size: cover;
@@ -66,7 +66,7 @@
 }
 .pls1_r_cut {
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     right: 0px;
     background: url(../img/pls1_r_cut_white.svg);
     background-size: cover;
@@ -175,6 +175,8 @@
     border-radius: 0px 0px 4px 4px;
     width: 100%;
     position: absolute;
+    z-index: 2;
+    background: #FFFFFF;
 }
 .btn_sort_btn {
     padding: 4px 16px;
@@ -552,7 +554,6 @@
 
 
 
-
 @media only screen and (max-width: 700px) {
     .mobile_none {
         display: none;
@@ -740,6 +741,125 @@
         z-index: 1;
         background-color: #FFFFFF;
     }
+
+    .pds2 {
+        padding: 32px 12px;
+    }
+    .pds2_result_text {
+        color: var(--Grayscale-600---Dark, #8A8A8A);
+        text-align: center;
+        font-family: 'Satoshi';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin-bottom: 16px;
+    }
+    .pds2_result_text span {
+        color: var(--Lime-Green, #8AB820);
+        font-family: 'Satoshi';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+    .pds2_mobo_card_title {
+        color: var(--Charcoal, #242323);
+        font-family: 'Satoshi';
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 142.857%; /* 27.143px */
+        text-transform: capitalize;
+        margin-bottom: 8px;
+    }
+    .pds2_mobo_card_subtitle {
+        color: var(--Grayscale-600---Dark, #8A8A8A);
+        font-family: 'Satoshi';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin-bottom: 0px;
+    }
+    .pds2_mobo_card_top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 8px;
+        gap: 22px;
+    }
+    .pds2_mobo_img {
+        max-width: 74px;
+        border-radius: 8px;
+    }
+    .pds2_mobo_card {
+        padding: 14px 12px;
+        border-radius: 4px;
+        background: var(--Grayscale-200---Near-White, #FAFAFA);
+    }
+    .pds2_mobo_card_text {
+        color: var(--Grayscale-600---Dark, #8A8A8A);
+        font-family: 'Satoshi';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+    .pds2_mobo_card_text span {
+        color: var(--Charcoal, #242323);
+        font-family: 'Satoshi';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .pds2_mobo_card_text span_green {
+        color: var(--Lime-Green, #8AB820);
+        font-family: 'Satoshi';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .pds2_mobo_card_bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 8px;
+    }
+    .row_custom {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 22.5px;
+    }
+    .custom_col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .pds2_mobo_frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 28px;
+    }
+    .pds2_mobo_bottom .pds2_mobo_card:nth-of-type(even) {
+        background: #FFFFFF;
+    }
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {
@@ -758,7 +878,7 @@
 @media only screen and (min-width: 1280px) and (max-width:1348px) {
     .pls1_l_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0px;
         background: url(../img/pls1_l_cut_white.svg);
         background-size: cover;
@@ -769,7 +889,7 @@
     }
     .pls1_r_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         right: 0px;
         background: url(../img/pls1_r_cut_white.svg);
         background-size: cover;
@@ -799,7 +919,7 @@
 @media only screen and (min-width: 1349px) and (max-width:1439px) {
     .pls1_l_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0px;
         background: url(../img/pls1_l_cut_white.svg);
         background-size: cover;
@@ -810,7 +930,7 @@
     }
     .pls1_r_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         right: 0px;
         background: url(../img/pls1_r_cut_white.svg);
         background-size: cover;
@@ -824,7 +944,7 @@
 @media only screen and (min-width: 1440px) and (max-width:1499px) {
     .pls1_l_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0px;
         background: url(../img/pls1_l_cut_white.svg);
         background-size: cover;
@@ -835,7 +955,7 @@
     }
     .pls1_r_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         right: 0px;
         background: url(../img/pls1_r_cut_white.svg);
         background-size: cover;
@@ -849,7 +969,7 @@
 @media only screen and (min-width: 1500px) and (max-width:1599px) {
     .pls1_l_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0px;
         background: url(../img/pls1_l_cut_white.svg);
         background-size: cover;
@@ -860,7 +980,7 @@
     }
     .pls1_r_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         right: 0px;
         background: url(../img/pls1_r_cut_white.svg);
         background-size: cover;
@@ -874,7 +994,7 @@
 @media only screen and (min-width: 1600px) and (max-width:1699px) {
     .pls1_l_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0px;
         background: url(../img/pls1_l_cut_white.svg);
         background-size: cover;
@@ -885,7 +1005,7 @@
     }
     .pls1_r_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         right: 0px;
         background: url(../img/pls1_r_cut_white.svg);
         background-size: cover;
@@ -899,7 +1019,7 @@
 @media only screen and (min-width: 1700px) and (max-width:1799px) {
     .pls1_l_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0px;
         background: url(../img/pls1_l_cut_white.svg);
         background-size: cover;
@@ -910,7 +1030,7 @@
     }
     .pls1_r_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         right: 0px;
         background: url(../img/pls1_r_cut_white.svg);
         background-size: cover;
@@ -924,7 +1044,7 @@
 @media only screen and (min-width: 1800px) and (max-width:1919px) {
     .pls1_l_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0px;
         background: url(../img/pls1_l_cut_white.svg);
         background-size: cover;
@@ -935,7 +1055,7 @@
     }
     .pls1_r_cut {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         right: 0px;
         background: url(../img/pls1_r_cut_white.svg);
         background-size: cover;
