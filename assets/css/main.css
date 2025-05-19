@@ -332,8 +332,8 @@ header {
     padding: 0px;
     margin-bottom: 0px;
 }
-input#inc_dec_num[type=number]::-webkit-inner-spin-button,
-input#inc_dec_num[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
