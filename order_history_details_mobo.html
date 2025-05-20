@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finndealz</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/css/owl.carousel.css">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="fixed-top" id="header">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_center">
+                        <button class="btn btn_header_link active">
+                            Shop Gift Cards
+                        </button>
+                        <button class="btn btn_header_link">
+                            Sell gift cards
+                        </button>
+                        <button class="btn btn_header_link">
+                            About Us
+                        </button>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                    </div>
+                    <div class="header_right">
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter1', this)">
+                                GBP £
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter1" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 10L12.0008 14.58L17 10" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop active">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header_drop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3.23767 19.5C4.56308 17.2892 7.46795 15.7762 11.9999 15.7762C16.5319 15.7762 19.4368 17.2892 20.7622 19.5M15.5999 8.1C15.5999 10.0882 13.9882 11.7 11.9999 11.7C10.0117 11.7 8.39995 10.0882 8.39995 8.1C8.39995 6.11177 10.0117 4.5 11.9999 4.5C13.9882 4.5 15.5999 6.11177 15.5999 8.1Z" stroke="#242323" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="cart_drop_container">
+                            <button class="btn btn_header_drop pos_rel" onclick="justDrop('cart_drop', 'roter2', this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15.6 8.34215C15.6 10.3304 13.9882 11.9422 12 11.9422C10.0118 11.9422 8.40002 10.3304 8.40002 8.34215M4.7273 20.9422H19.2728C20.5581 20.9422 21.6 19.9196 21.6 18.6581L20.1091 5.34212C20.1091 4.08069 19.0672 3.05811 17.7818 3.05811H5.9273C4.64198 3.05811 3.60002 4.08069 3.60002 5.34212L2.40002 18.6581C2.40002 19.9196 3.44198 20.9422 4.7273 20.9422Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <h1 class="cart_title">Shopping Cart</h1>
+                                <div class="cart_item_outer">
+                                    <div class="cart_item">
+                                        <div class="cart_item_left">
+                                            <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                        </div>
+                                        <div class="cart_item_center">
+                                            <div class="cart_item_center_top">
+                                                <p class="cart_item_price">$10.00</p>
+                                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                                            </div>
+                                            <div class="cart_item_center_bottom">
+                                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="cart_item_right">
+                                            <div class="item_inc_dec_box">
+                                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num')">
+                                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                                </button>
+                                                <input type="number" class="inc_dec_num" id="inc_dec_num" value="1">
+                                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num')">
+                                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                                </button>
+                                            </div>
+                                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_total">
+                                        <p class="cart_total_text">RRP</p>
+                                        <p class="cart_total_text">£379.00</p>
+                                    </div>
+
+                                    <div class="cart_item_total2">
+                                        <p class="cart_total_text1">Total</p>
+                                        <p class="cart_total_text1">£379.00</p>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn btn_global_green mx-auto">
+                                    <p class="btn_global_text">Checkout</p>
+                                    <span class="btn_global_green_inner">
+                                        <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <div class="cart_menu">
+                            <button class="btn btn_header_drop pos_rel p-0" onclick="justDrop('cart_drop', 'roter3', this)" style="border: 0px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15.6 8.34215C15.6 10.3304 13.9882 11.9422 12 11.9422C10.0118 11.9422 8.40002 10.3304 8.40002 8.34215M4.7273 20.9422H19.2728C20.5581 20.9422 21.6 19.9196 21.6 18.6581L20.1091 5.34212C20.1091 4.08069 19.0672 3.05811 17.7818 3.05811H5.9273C4.64198 3.05811 3.60002 4.08069 3.60002 5.34212L2.40002 18.6581C2.40002 19.9196 3.44198 20.9422 4.7273 20.9422Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header_mobo_center">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo_mobo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link_mobo">
+                    Shop Gift Cards
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Sell Gift Cards
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    About us
+                </button>
+                <button class="btn btn_header_link_mobo active">
+                    Contact Us
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Login/Register
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop mx-auto"
+                        onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Shopping Cart</h1>
+                <div class="cart_item_outer">
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item_total">
+                        <p class="cart_total_text">RRP</p>
+                        <p class="cart_total_text">£379.00</p>
+                    </div>
+
+                    <div class="cart_item_total2">
+                        <p class="cart_total_text1">Total</p>
+                        <p class="cart_total_text1">£379.00</p>
+                    </div>
+                </div>
+                <div class="cart_btn_grp">
+                    <button class="btn btn_global_dark" onclick="closeMobileCart()">
+                        <p class="btn_global_text2">Close Cart</p>
+                        <span class="btn_global_dark_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                    <button class="btn btn_global_green">
+                        <p class="btn_global_text">Checkout</p>
+                        <span class="btn_global_green_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="order_details_mobo">
+
+        <div class="ohd_main">
+            <button class="btn btn_global d-flex mx-auto mb-4">
+                Back To Order History
+            </button>
+            <img type="button" src="./assets/img/cross_x_cart.svg" alt="" class="img-fluid mobile_none close_modal" data-bs-dismiss="modal" aria-label="Close">
+            <img type="button" src="./assets/img/back_mod.svg" alt="" class="img-fluid desktop_none close_modal" data-bs-dismiss="modal" aria-label="Close">
+            <div class="odh_mod_top">
+                <p class="odh_mod_top_text">Order: #1234567</p>
+                <div class="ohd_right_status">
+                    <div class="ohd_right_status_main_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                            <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                            <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C4EB80"/>
+                                <stop offset="1" stop-color="#94D0C1"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        <p class="ohd_right_status_title">Order Placed</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <div class="ohd_right_status_main_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                            <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                            <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C4EB80"/>
+                                <stop offset="1" stop-color="#94D0C1"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        <p class="ohd_right_status_title">On Review</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <div class="ohd_right_status_main_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                            <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                            <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C4EB80"/>
+                                <stop offset="1" stop-color="#94D0C1"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        <p class="ohd_right_status_title">Delivery Pending</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <div class="ohd_right_status_main_box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                            <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                            <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                            <defs>
+                              <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#C4EB80"/>
+                                <stop offset="1" stop-color="#94D0C1"/>
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        <p class="ohd_right_status_title">Order Delivered</p>
+                    </div>
+                </div>
+            </div>
+            <div class="odh_mod_bottom">
+                <div class="order_history_panel_pop">
+                    
+                    <div class="order_history_panel_pop_table">
+                        
+                        <div class="table-responsive">
+                            <div class="green_div">
+                                <p class="gd_text">Purchase Overview</p>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col"><p class="orhtp_title">#</p></th>
+                                    <th scope="col"><p class="orhtp_title">Product</p></th>
+                                    <!-- <th scope="col"><p class="orhtp_title text-center">Type</p></th> -->
+                                    <th scope="col"><p class="orhtp_title text-end">Qty</p></th>
+                                    <th scope="col"><p class="orhtp_title text-end">Price</p></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="orht_textp">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="orht_textp">01.12.2023</p>
+                                        </td>
+                                        <!-- <td>
+                                            <p class="orht_textp text-center">video</p>
+                                        </td> -->
+                                        <td>
+                                            <p class="orht_textp2 text-end">£199.75</p>
+                                        </td>
+                                        <td>
+                                            <p class="orht_textp2 text-end">£199.75</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="orht_textp">2</p>
+                                        </td>
+                                        <td>
+                                            <p class="orht_textp">01.12.2023</p>
+                                        </td>
+                                        <!-- <td>
+                                            <p class="orht_textp text-center">video</p>
+                                        </td> -->
+                                        <td>
+                                            <p class="orht_textp2 text-end">£199.75</p>
+                                        </td>
+                                        <td>
+                                            <p class="orht_textp2 text-end">£199.75</p>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="order_detail_chart">
+                        <div class="green_div">
+                            <p class="gd_text">Purchase Overview</p>
+                        </div>
+                        
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_detail_chart2">
+                        <div class="green_div">
+                            <p class="gd_text">Order Information</p>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_detail_chart2">
+                        <div class="green_div">
+                            <p class="gd_text">Order Information</p>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_div">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="white_div_text_l">Subtotal</p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="white_div_text_r">$10.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer_frame">
+            <div class="container">
+                <div class="footer_main">
+                    <div class="footer_top">
+                        <div class="footer_left">
+                            <div class="footer_left_top">
+                                <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                                <img src="./assets/img/master.svg" alt="" class="img-fluid master_img">
+                            </div>
+                            <div class="footer_left_center">
+                                <p class="footer_info"><span>Email:</span> info@Finndealz.com</p>
+                                <p class="footer_info"><span>Tel:</span> +971 4 388 8082, +971 56 256 6887</p>
+                                <p class="footer_info"><span>Address:</span> FINNOVATION COMMERCIAL BROKERS LLC, Office #312 Makateb Building Port Saeed, Deira, Dubai, UAE, Company Registration: 1136839</p>
+                            </div>
+                            <div class="footer_left_bottom">
+                                <button class="btn btn_socials">
+                                    <img src="./assets/img/face_logo.svg" alt="" class="img-fluid social_img">
+                                </button>
+                                <button class="btn btn_socials">
+                                    <img src="./assets/img/insta_logo.svg" alt="" class="img-fluid social_img">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="footer_right">
+                            <div class="footer_right_element">
+                                <p class="footer_title">Website Links</p>
+                                <div class="footer_link_box">
+                                    <button class="btn btn_footer_links">Buy Gift Cards</button>
+                                    <button class="btn btn_footer_links">Sell gift cards</button>
+                                    <button class="btn btn_footer_links">About Us</button>
+                                </div>
+                            </div>
+                            <div class="footer_right_element">
+                                <p class="footer_title">Company Links</p>
+                                <div class="footer_link_box">
+                                    <button class="btn btn_footer_links">Contact Us</button>
+                                    <button class="btn btn_footer_links">Login</button>
+                                    <button class="btn btn_footer_links">Register</button>
+                                </div>
+                            </div>
+                            <div class="footer_right_element wm_100">
+                                <p class="footer_title">Legals</p>
+                                <div class="footer_link_box fxr_mob">
+                                    <button class="btn btn_footer_links">Terms & Conditions</button>
+                                    <button class="btn btn_footer_links">Privacy Policy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_center">
+                        <div class="footer_divider"></div>
+                    </div>
+                    <div class="footer_bottom">
+                        <p class="footer_copyright">© Copyright 2025. All rights reserved by <span>Finndealz.com.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

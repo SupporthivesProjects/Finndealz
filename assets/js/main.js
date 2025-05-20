@@ -71,9 +71,9 @@ function togglePassword(input_id, input_eye_image) {
 
 
 $(document).ready(function () {
-    $('#pds2').owlCarousel({
+    $('#hs3').owlCarousel({
         loop:false,
-        margin: 28,
+        margin: 24,
         nav:false,
         dots: false,
         responsive:{
@@ -92,6 +92,38 @@ $(document).ready(function () {
                 items:3
             },
             1000:{
+                items:4
+            },
+            1600:{
+                items:5
+            }
+        }
+    });
+
+    $('#hs5').owlCarousel({
+        loop:false,
+        margin: 24,
+        nav:false,
+        dots: false,
+        responsive:{
+            0:{
+                loop: true,
+                items:1.2,
+                nav: true,
+                dots: true,
+                dotsEach: 1,
+                navText: [
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
+                ],
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            },
+            1600:{
                 items:5
             }
         }
@@ -175,3 +207,23 @@ function dash_drop_mob(drp_div_id, rote_id, text_name, img_num, el) {
     }
 }
 
+
+const card1 = document.getElementById("hs1_cim1");
+const card2 = document.getElementById("hs1_cim2");
+const card3 = document.getElementById("hs1_cim3");
+
+document.addEventListener("mousemove", (event) => {
+  const centerX = window.innerWidth / 2;
+
+  // Get horizontal distance from center, range -1 (left) to +1 (right)
+  const percentX = (event.clientX - centerX) / centerX;
+
+  // Clamp and scale to max ±18 degrees
+  const rotateZ = Math.max(-1, Math.min(1, percentX)) * 4;
+
+  card1.style.transform = `rotate(${rotateZ}deg)`;
+  card2.style.transform = `rotate(${rotateZ}deg)`;
+  card3.style.transform = `rotate(${rotateZ}deg)`;
+
+  console.log(`rotateZ: ${rotateZ.toFixed(2)}°`);
+});

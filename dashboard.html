@@ -504,7 +504,84 @@
                                     <div class="dash_right_acc_details">
                                         <h1 class="dash_title2">Order History</h1>
                                         <p class="dash_subtitle2">Lorem ipsum dolor sit amet consectetur. Ut pulvinar id id commodo vitae. Ornare non elit arcu arcu diam mattis consequat amet in. Ante enim dictum quis in proin.</p>
+                                        <p class="drag_text desktop_none">*Drag left or right to view more*</p>
                                         
+                                        <div class="order_table">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <div class="order_table_head me-auto">
+                                                                <p class="order_table_title">Order</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="order_table_head ms-auto">
+                                                                <p class="order_table_title">Date</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="order_table_head ms-auto">
+                                                                <p class="order_table_title">Quantity</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="order_table_head ms-auto">
+                                                                <p class="order_table_title">Total</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                </tbody>
+                                                
+
+                                            </table>
+                                        </div>
 
                                         <div class="pagination_box">
                                             <button class="btn btn_pagination">
@@ -558,6 +635,298 @@
 
 
 
+
+        <!-- Modal -->
+    <div class="modal fade order_history_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ohd_dial">
+            <div class="modal-content ohd_cont">
+                <div class="modal-body ohd_body">
+                    <div class="ohd_main">
+                        <img type="button" src="./assets/img/cross_x_cart.svg" alt="" class="img-fluid mobile_none close_modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img type="button" src="./assets/img/back_mod.svg" alt="" class="img-fluid desktop_none close_modal" data-bs-dismiss="modal" aria-label="Close">
+                        <div class="odh_mod_top">
+                            <p class="odh_mod_top_text">Order: #1234567</p>
+                            <div class="ohd_right_status">
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Order Placed</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">On Review</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Delivery Pending</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Order Delivered</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="odh_mod_bottom">
+                            <div class="order_history_panel_pop">
+                                <div class="sputnik desktop_none" style="margin-bottom: -6px;">
+                                    <div class="div_swipe_line_l"></div>
+                                    <p class="swipr_text">Swipe to scroll through the table</p>
+                                    <div class="div_swipe_line_r"></div>
+                                </div>
+                                <div class="order_history_panel_pop_table">
+                                    
+                                    <div class="table-responsive">
+                                        <div class="green_div">
+                                            <p class="gd_text">Purchase Overview</p>
+                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col"><p class="orhtp_title">#</p></th>
+                                                <th scope="col"><p class="orhtp_title">Product</p></th>
+                                                <!-- <th scope="col"><p class="orhtp_title text-center">Type</p></th> -->
+                                                <th scope="col"><p class="orhtp_title text-end">Qty</p></th>
+                                                <th scope="col"><p class="orhtp_title text-end">Price</p></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="orht_textp">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp">01.12.2023</p>
+                                                    </td>
+                                                    <!-- <td>
+                                                        <p class="orht_textp text-center">video</p>
+                                                    </td> -->
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="orht_textp">2</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp">01.12.2023</p>
+                                                    </td>
+                                                    <!-- <td>
+                                                        <p class="orht_textp text-center">video</p>
+                                                    </td> -->
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="order_detail_chart">
+                                    <div class="green_div">
+                                        <p class="gd_text">Purchase Overview</p>
+                                    </div>
+                                    
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_detail_chart2">
+                                    <div class="green_div">
+                                        <p class="gd_text">Order Information</p>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_detail_chart2">
+                                    <div class="green_div">
+                                        <p class="gd_text">Order Information</p>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
         
