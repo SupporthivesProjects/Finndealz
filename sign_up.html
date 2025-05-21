@@ -343,25 +343,25 @@
                     <h3 class="heading_login">Create an account</h3>
                     <div class="div_login_input">
                         <div class="inner_input_singup">
-                            <input type="text" class="input_rp" placeholder="First Name">
-                            <input type="text" class="input_rp" placeholder="Last Name">
+                            <input type="text" class="form-control input_global" placeholder="First Name" id="">
+                            <input type="text" class="form-control input_global" placeholder="Last Name" id="">
                         </div>
                         <div class="inner_input_singup">
-                            <input type="text" class="input_rp" placeholder="Phone Number">
-                            <input type="text" class="input_rp" placeholder="Email Address">
+                            <input type="text" class="form-control input_global" placeholder="Phone Number" id="">
+                            <input type="text" class="form-control input_global" placeholder="Email Address" id="">
                         </div>
                         <div class="inner_input_singup">
-                            <div class="password_div_login w-100">
-                                <input type="password" id="password" placeholder="Password" class="input_rp w-100">
-                                <span class="toggle-visibility" onclick="togglePassword()">
-                                    <img src="./assets/img/open_eye.png" alt="" class="img-fluid eye_icon">
-                                </span>
+                            <div class="eye_input_div">
+                                <input type="password" class="form-control input_global"
+                                    placeholder="Password" id="password">
+                                <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon"
+                                    onclick="togglePassword('password', this)">
                             </div>
-                            <div class="password_div_login w-100">
-                                <input type="password" id="password" placeholder="Password" class="input_rp w-100">
-                                <span class="toggle-visibility" onclick="togglePassword()">
-                                    <img src="./assets/img/open_eye.png" alt="" class="img-fluid eye_icon">
-                                </span>
+                            <div class="eye_input_div">
+                                <input type="password" class="form-control input_global"
+                                    placeholder="Confirm Password" id="password">
+                                <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon"
+                                    onclick="togglePassword('password', this)">
                             </div>
                         </div>
                     </div>
@@ -412,12 +412,13 @@
                         <div class="div1_inner_modal">
                             <div class="div_heading_modal">
                                 <h3 class="heading_modal">Thank you for registering</h3>
-                                <p class="para_modal1">Welcome to Finndealz! You’re all set to start shopping smarter and
+                                <p class="para_modal1">Welcome to Finndealz! You’re all set to start shopping smarter
+                                    and
                                     saving more. Check your inbox for a quick confirmation.</p>
                             </div>
                         </div>
                         <button class="btn btn_global4 ">
-                                login here
+                            login here
                         </button>
                     </div>
                 </div>

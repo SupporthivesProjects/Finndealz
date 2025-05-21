@@ -342,12 +342,12 @@
                 <div class="login_inner">
                     <h3 class="heading_login">Welcome back</h3>
                     <div class="div_login_input">
-                        <input type="text" class="input_rp" placeholder="Email Address">
-                        <div class="password_div_login w-100">
-                            <input type="password" id="password" placeholder="Password" class="input_rp w-100">
-                            <span class="toggle-visibility" onclick="togglePassword()">
-                                <img src="./assets/img/open_eye.png" alt="" class="img-fluid eye_icon">
-                            </span>
+                        <input type="text" class="form-control input_global" placeholder="Email Address" id="">
+                        <div class="eye_input_div w-100">
+                            <input type="password" class="form-control input_global" placeholder="Password"
+                                id="password">
+                            <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon"
+                                onclick="togglePassword('password', this)">
                         </div>
                         <p class="para_login" data-bs-toggle="modal" data-bs-target="#exampleModal">Forgot Your
                             Password?</p>
@@ -388,7 +388,7 @@
                                     we’ll send you a link to reset your password.</p>
                             </div>
                         </div>
-                        <input type="text" placeholder="Email Address" class="input_rp">
+                        <input type="text" class="form-control input_global" placeholder="Email Address" id="">
                         <div class="c-checkbox_s2">
                             <div class="c-div_s2">
                                 <label class="d-flex justify-content-center justify-content-lg-start">
