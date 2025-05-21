@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finndealz</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/css/owl.carousel.css">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="fixed-top" id="header">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_center">
+                        <button class="btn btn_header_link active">
+                            Shop Gift Cards
+                        </button>
+                        <button class="btn btn_header_link">
+                            Sell gift cards
+                        </button>
+                        <button class="btn btn_header_link">
+                            About Us
+                        </button>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                    </div>
+                    <div class="header_right">
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter1', this)">
+                                GBP £
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter1" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 10L12.0008 14.58L17 10" stroke="#242323" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop active">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header_drop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M3.23767 19.5C4.56308 17.2892 7.46795 15.7762 11.9999 15.7762C16.5319 15.7762 19.4368 17.2892 20.7622 19.5M15.5999 8.1C15.5999 10.0882 13.9882 11.7 11.9999 11.7C10.0117 11.7 8.39995 10.0882 8.39995 8.1C8.39995 6.11177 10.0117 4.5 11.9999 4.5C13.9882 4.5 15.5999 6.11177 15.5999 8.1Z"
+                                    stroke="#242323" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="cart_drop_container">
+                            <button class="btn btn_header_drop pos_rel" onclick="justDrop('cart_drop', 'roter2', this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M15.6 8.34215C15.6 10.3304 13.9882 11.9422 12 11.9422C10.0118 11.9422 8.40002 10.3304 8.40002 8.34215M4.7273 20.9422H19.2728C20.5581 20.9422 21.6 19.9196 21.6 18.6581L20.1091 5.34212C20.1091 4.08069 19.0672 3.05811 17.7818 3.05811H5.9273C4.64198 3.05811 3.60002 4.08069 3.60002 5.34212L2.40002 18.6581C2.40002 19.9196 3.44198 20.9422 4.7273 20.9422Z"
+                                        stroke="#242323" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <h1 class="cart_title">Shopping Cart</h1>
+                                <div class="cart_item_outer">
+                                    <div class="cart_item">
+                                        <div class="cart_item_left">
+                                            <img src="./assets/img/cart_item_img.png" alt=""
+                                                class="img-fluid cart_item_image">
+                                        </div>
+                                        <div class="cart_item_center">
+                                            <div class="cart_item_center_top">
+                                                <p class="cart_item_price">$10.00</p>
+                                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                                            </div>
+                                            <div class="cart_item_center_bottom">
+                                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="cart_item_right">
+                                            <div class="item_inc_dec_box">
+                                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num')">
+                                                    <img src="./assets/img/inc_plus.svg" alt=""
+                                                        class="img-fluid img_inc_dec">
+                                                </button>
+                                                <input type="number" class="inc_dec_num" id="inc_dec_num" value="1">
+                                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num')">
+                                                    <img src="./assets/img/dec_minus.svg" alt=""
+                                                        class="img-fluid img_inc_dec">
+                                                </button>
+                                            </div>
+                                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_total">
+                                        <p class="cart_total_text">RRP</p>
+                                        <p class="cart_total_text">£379.00</p>
+                                    </div>
+
+                                    <div class="cart_item_total2">
+                                        <p class="cart_total_text1">Total</p>
+                                        <p class="cart_total_text1">£379.00</p>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn_global_green mx-auto">
+                                    <p class="btn_global_text">Checkout</p>
+                                    <span class="btn_global_green_inner">
+                                        <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <div class="cart_menu">
+                            <button class="btn btn_header_drop pos_rel p-0"
+                                onclick="justDrop('cart_drop', 'roter3', this)" style="border: 0px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M15.6 8.34215C15.6 10.3304 13.9882 11.9422 12 11.9422C10.0118 11.9422 8.40002 10.3304 8.40002 8.34215M4.7273 20.9422H19.2728C20.5581 20.9422 21.6 19.9196 21.6 18.6581L20.1091 5.34212C20.1091 4.08069 19.0672 3.05811 17.7818 3.05811H5.9273C4.64198 3.05811 3.60002 4.08069 3.60002 5.34212L2.40002 18.6581C2.40002 19.9196 3.44198 20.9422 4.7273 20.9422Z"
+                                        stroke="#242323" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header_mobo_center">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo_mobo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link_mobo">
+                    Shop Gift Cards
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Sell Gift Cards
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    About us
+                </button>
+                <button class="btn btn_header_link_mobo active">
+                    Contact Us
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Login/Register
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop mx-auto"
+                        onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Shopping Cart</h1>
+                <div class="cart_item_outer">
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item_total">
+                        <p class="cart_total_text">RRP</p>
+                        <p class="cart_total_text">£379.00</p>
+                    </div>
+
+                    <div class="cart_item_total2">
+                        <p class="cart_total_text1">Total</p>
+                        <p class="cart_total_text1">£379.00</p>
+                    </div>
+                </div>
+                <div class="cart_btn_grp">
+                    <button class="btn btn_global_dark" onclick="closeMobileCart()">
+                        <p class="btn_global_text2">Close Cart</p>
+                        <span class="btn_global_dark_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                    <button class="btn btn_global_green">
+                        <p class="btn_global_text">Checkout</p>
+                        <span class="btn_global_green_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <section class="about_1">
+            <img src="./assets/img/aboutus_shape.svg" alt="" class="img-fluid aboutus_shape mobile_none">
+            <img src="./assets/img/three dots.svg" alt="" class="img-fluid dots mobile_none">
+            <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                style="object-fit: cover; border-radius: 50px;">
+                <source src="./assets/img/ab_vid.mp4" type="video/mp4">
+            </video>
+            <video class="bg-image d-lg-none d-md-none d-block" loop="" muted="" autoplay="" style="object-fit: cover; height: 376px;">
+                <source src="./assets/img/ab_vid_mob.mp4" type="video/mp4">
+            </video>
+            <div class="container p-0">
+                <div class="first_vid_con">
+                    <div class="in_div">
+                        <h1 class="ab1_tt">We’re Changing the Way You <span>Gift</span> and <span>Save</span></h1>
+                        <p class="ab1_pp">Finndealz was built for shoppers who want more value from the brands they already love. With instant digital delivery and discounts up to 25%, we make sure every purchase feels like a win—for both the buyer and the recipient.</p>
+                        <div class="btn_sec">
+                            <button class="btn btn_global_dark">
+                                <p class="btn_global_text2">Shop Deals</p>
+                                <span class="btn_global_dark_inner">
+                                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                </span>
+                            </button>
+                            <button class="btn btn_global_green">
+                                <p class="btn_global_text">Sign up</p>
+                                <span class="btn_global_green_inner">
+                                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pls1_l_cut desktop_none"></div>
+            <div class="pls1_c_cut desktop_none"></div>
+            <div class="pls1_r_cut desktop_none"></div>
+        </section>
+        <section class="about_2">
+            <header class="clip_head"></header>
+            <div class="for_padding">
+                <div class="inin_ab2">
+                    <div class="in_ab2">
+                        <div class="ab2_left">
+                            <div class="capsule_1">
+                                Meet Finndealz
+                            </div>
+                            <h1 class="ab2_tt"><span class="ab2_tt_span">deals</span> start here</h1>
+                            <p class="ab2_pp">Lorem ipsum dolor sit amet consectetur. Ipsum turpis turpis sed nec
+                                gravida.
+                                Imperdiet sem scelerisque eget netus. Sollicitudin sollicitudin non libero in sed.</p>
+                            <button class="btn btn_global_green">
+                                <p class="btn_global_text">Sign up</p>
+                                <span class="btn_global_green_inner">
+                                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                </span>
+                            </button>
+                        </div>
+                        <img src="./assets/img/about2_img.svg" alt="" class="img-fluid mobile_none">
+                        <img src="./assets/img/ab2_img_mob.svg" alt="" class="img-fluid desktop_none">
+                        <div class="ab2_right">
+                            <p class="ab2_pp2">Lorem ipsum dolor sit amet consectetur. Nibh porttitor lectus dui etiam
+                                duis.
+                                Commodo adipiscing sem parturient
+                                massa. Aliquam interdum pharetra
+                                <br>
+                                <br>
+                                egestas dui amet orci velit nec. Vivamus metus pharetra id sapien iaculis. Feugiat
+                                lectus arcu ullamcorper scelerisque. Sit volutpat lorem sit platea. </p>
+                            <button class="btn btn_global_dark">
+                                <p class="btn_global_text2">Shop Deals</p>
+                                <span class="btn_global_dark_inner">
+                                    <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="about_3">
+
+            <div class="top_ab3">
+                <div class="in_ab3">
+                    <div class="capsule_1">
+                        Built for Everyday Savings
+                    </div>
+                    <h1 class="about4_tt">More Than<br class="desktop_none"> Just <span
+                            class="about4_tt_span">Discounts</span></h1>
+                    <p class="about4_pp" style="text-align: center;">
+                        Lorem ipsum dolor sit amet consectetur. Tincidunt nunc dignissim tellus sem eget. Massa ornare
+                        nulla vehicula ante sodales ut volutpat adipiscing. Risus egestas ut tristique aenean ac. Nunc
+                        tincidunt risus penatibus sit molestie non. Morbi fames arcu felis ac. Turpis massa tellus velit
+                        magna faucibus. Purus non in mollis malesuada.
+                    </p>
+                </div>
+                <button class="btn btn_global_green">
+                    <p class="btn_global_text">Start Saving</p>
+                    <span class="btn_global_green_inner">
+                        <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                    </span>
+                </button>
+            </div>
+            <div class="container p-0">
+                <div class="bottom_ab3">
+                    <div class="global_card for_textcenter">
+                        <img src="./assets/img/gc_img1.png" alt="" class="img-fluid global_card_image">
+                        <div class="gc_content_box">
+                            <h5 class="gc_title for_textcenter">Real Savings, Every Time</h5>
+                            <p class="gc_subtitle for_textcenter">Lorem ipsum dolor sit amet consectetur. Elementum.</p>
+                        </div>
+
+
+                        <!-- above elements & class names can be changed or removed -->
+
+                        <!-- below elements & class names cannot be changed or removed -->
+
+                        <div class="gc_star star1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M14.1456 19.3288L9.42504 12.019L0.98746 14.1458L8.29718 9.42521L6.17046 0.987626L10.891 8.29735L19.3286 6.17062L12.0189 10.8912L14.1456 19.3288Z"
+                                    fill="#242323" fill-opacity="0.1" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M13.2962 18.0271L8.85083 11.1435L0.905066 13.1462L7.78871 8.70083L5.78595 0.755066L10.2313 7.63871L18.1771 5.63595L11.2935 10.0814L13.2962 18.0271Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M16.9283 14.164L9.15226 10.2591L2.95963 16.372L6.86453 8.5959L0.751666 2.40328L8.52775 6.30818L14.7204 0.195312L10.8155 7.9714L16.9283 14.164Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="global_card for_textcenter">
+                        <img src="./assets/img/gc_img2.png" alt="" class="img-fluid global_card_image">
+                        <div class="gc_content_box">
+                            <h5 class="gc_title for_textcenter">Fast & Easy Checkout</h5>
+                            <p class="gc_subtitle for_textcenter">Lorem ipsum dolor sit amet consectetur. Elementum.</p>
+                        </div>
+
+
+                        <!-- above elements & class names can be changed or removed -->
+
+                        <!-- below elements & class names cannot be changed or removed -->
+
+                        <div class="gc_star star1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M14.1456 19.3288L9.42504 12.019L0.98746 14.1458L8.29718 9.42521L6.17046 0.987626L10.891 8.29735L19.3286 6.17062L12.0189 10.8912L14.1456 19.3288Z"
+                                    fill="#242323" fill-opacity="0.1" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M13.2962 18.0271L8.85083 11.1435L0.905066 13.1462L7.78871 8.70083L5.78595 0.755066L10.2313 7.63871L18.1771 5.63595L11.2935 10.0814L13.2962 18.0271Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M16.9283 14.164L9.15226 10.2591L2.95963 16.372L6.86453 8.5959L0.751666 2.40328L8.52775 6.30818L14.7204 0.195312L10.8155 7.9714L16.9283 14.164Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="global_card for_textcenter">
+                        <img src="./assets/img/gc_img3.png" alt="" class="img-fluid global_card_image">
+                        <div class="gc_content_box">
+                            <h5 class="gc_title for_textcenter">Secure, Verified Transactions</h5>
+                            <p class="gc_subtitle for_textcenter">Lorem ipsum dolor sit amet consectetur. Elementum.</p>
+                        </div>
+
+
+                        <!-- above elements & class names can be changed or removed -->
+
+                        <!-- below elements & class names cannot be changed or removed -->
+
+                        <div class="gc_star star1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M14.1456 19.3288L9.42504 12.019L0.98746 14.1458L8.29718 9.42521L6.17046 0.987626L10.891 8.29735L19.3286 6.17062L12.0189 10.8912L14.1456 19.3288Z"
+                                    fill="#242323" fill-opacity="0.1" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M13.2962 18.0271L8.85083 11.1435L0.905066 13.1462L7.78871 8.70083L5.78595 0.755066L10.2313 7.63871L18.1771 5.63595L11.2935 10.0814L13.2962 18.0271Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M16.9283 14.164L9.15226 10.2591L2.95963 16.372L6.86453 8.5959L0.751666 2.40328L8.52775 6.30818L14.7204 0.195312L10.8155 7.9714L16.9283 14.164Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="global_card for_textcenter">
+                        <img src="./assets/img/gc_img4.png" alt="" class="img-fluid global_card_image">
+                        <div class="gc_content_box">
+                            <h5 class="gc_title for_textcenter">Wide Range
+                                of Brands</h5>
+                            <p class="gc_subtitle for_textcenter">Lorem ipsum dolor sit amet consectetur. Elementum.</p>
+                        </div>
+
+
+                        <!-- above elements & class names can be changed or removed -->
+
+                        <!-- below elements & class names cannot be changed or removed -->
+
+                        <div class="gc_star star1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M14.1456 19.3288L9.42504 12.019L0.98746 14.1458L8.29718 9.42521L6.17046 0.987626L10.891 8.29735L19.3286 6.17062L12.0189 10.8912L14.1456 19.3288Z"
+                                    fill="#242323" fill-opacity="0.1" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M13.2962 18.0271L8.85083 11.1435L0.905066 13.1462L7.78871 8.70083L5.78595 0.755066L10.2313 7.63871L18.1771 5.63595L11.2935 10.0814L13.2962 18.0271Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                        <div class="gc_star star3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path opacity="0.1"
+                                    d="M16.9283 14.164L9.15226 10.2591L2.95963 16.372L6.86453 8.5959L0.751666 2.40328L8.52775 6.30818L14.7204 0.195312L10.8155 7.9714L16.9283 14.164Z"
+                                    fill="#242323" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about_4">
+            <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                style="object-fit: cover;">
+                <source src="./assets/img/aboutus4_vid.mp4" type="video/mp4">
+            </video>
+            <video class="bg-image d-lg-none d-md-none d-block video_phone" loop="" muted="" autoplay=""
+                style="object-fit: cover;">
+                <source src="./assets/img/aboutus4vid_mob.mp4" type="video/mp4">
+            </video>
+
+
+            <div class="container p-0">
+                <div class="content_div ">
+                    <div class="actual_div">
+                        <div class="top_1">
+                            <div class="capsule_1">
+                                Something For Everyone
+                            </div>
+                            <h1 class="about4_tt">Choose the<br>
+                                Right Kind of <span class="about4_tt_span">Gift</span></h1>
+                            <p class="about4_pp">
+                                Lorem ipsum dolor sit amet consectetur. Diam tempor id morbi morbi. Feugiat facilisi leo
+                                tellus fusce elementum tellus vulputate.
+                            </p>
+                        </div>
+                        <div class="middle_1">
+                            <div class="each_side">
+                                <div class="pointer_div">
+                                    <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Food & Drink </p>
+                                </div>
+                                <div class="pointer_div">
+                                    <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Gifts and Occasions</p>
+                                </div>
+                                <div class="pointer_div">
+                                    <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Health & Beauty </p>
+                                </div>
+                            </div>
+                            <div class="each_side">
+                                <div class="pointer_div">
+                                    <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Home & Garden</p>
+                                </div>
+                                <div class="pointer_div">
+                                    <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Technology & Electrical</p>
+                                </div>
+                                <div class="pointer_div">
+                                    <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Music, Books, Games & Movies</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn_global_green">
+                            <p class="btn_global_text">View All</p>
+                            <span class="btn_global_green_inner">
+                                <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="about_5">
+            <div class="left_ab5">
+                <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                    style="object-fit: cover; border-radius: 20px;">
+                    <source src="./assets/img/about_vid.mp4" type="video/mp4">
+                </video>
+                <video class="bg-image d-lg-none d-md-none d-block" loop="" muted="" autoplay=""
+                    style="object-fit: cover; border-radius: 20px;">
+                    <source src="./assets/img/about_vid_mob.mp4" type="video/mp4">
+                </video>
+
+                <div class="video_outer_border">
+                    <img src="./assets/img/aboutus_smallcuts.svg" alt="" class="img-fluid aboutus_smallcuts1">
+                    <img src="./assets/img/aboutus_smallcuts.svg" alt="" class="img-fluid aboutus_smallcuts2">
+                    <div class="video_content_div">
+                        <p class="top_content">100%</p>
+                        <p class="bottom_con">Satisfaction Rate</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right_ab5">
+                <div class="top_ab5">
+                    <div class="capsule_1">
+                        How Finndealz Works
+                    </div>
+                    <h1 class="ab5_tt">
+                        Because <span>full price</span><br class="mobile_none">
+                        is always optional
+                    </h1>
+                    <p class="ab5_pp">Lorem ipsum dolor sit amet consectetur. Magna leo commodo pharetra eget mauris
+                        cursus id eget. Ultricies tincidunt amet mauris gravida donec vitae netus quam lectus. Ut eu
+                        nulla tellus mauris gravida.</p>
+                </div>
+
+                <div class="ab5_lline">
+
+                </div>
+                <div class="middle_ab5">
+                    <img src="./assets/img/ab5_img.png" alt="" class="img-fluid mobile_none">
+                    <img src="./assets/img/phone_ab5_img.png" alt="" class="img-fluid desktop_none">
+                    <div class="rightside">
+                        <p class="rightside_pp">Lorem ipsum dolor sit amet consectetur. Tristique nisl dui arcu eget.
+                            Rhoncus molestie arcu
+                            sagittis.</p>
+                        <div class="bottom_rightside">
+                            <div class="pointer_div">
+                                <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                <p class="pointer_pp">Buy Gift Cards for Less </p>
+                            </div>
+                            <div class="pointer_div">
+                                <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                <p class="pointer_pp">Sell Unwanted Gift Cards</p>
+                            </div>
+                            <div class="pointer_div">
+                                <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                <p class="pointer_pp">Instant Digital Delivery</p>
+                            </div>
+                            <div class="pointer_div">
+                                <img src="./assets/img/point_svg.svg" alt="" class="img-fluid">
+                                <p class="pointer_pp">Safe, Simple Transactions </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="btn btn_global_green">
+                    <p class="btn_global_text">Buy Now</p>
+                    <span class="btn_global_green_inner">
+                        <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                    </span>
+                </button>
+            </div>
+        </section>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer_frame">
+            <div class="container">
+                <div class="footer_main">
+                    <div class="footer_top">
+                        <div class="footer_left">
+                            <div class="footer_left_top">
+                                <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                                <img src="./assets/img/master.svg" alt="" class="img-fluid master_img">
+                            </div>
+                            <div class="footer_left_center">
+                                <p class="footer_info"><span>Email:</span> info@Finndealz.com</p>
+                                <p class="footer_info"><span>Tel:</span> +971 4 388 8082, +971 56 256 6887</p>
+                                <p class="footer_info"><span>Address:</span> FINNOVATION COMMERCIAL BROKERS LLC, Office
+                                    #312 Makateb Building Port Saeed, Deira, Dubai, UAE, Company Registration: 1136839
+                                </p>
+                            </div>
+                            <div class="footer_left_bottom">
+                                <button class="btn btn_socials">
+                                    <img src="./assets/img/face_logo.svg" alt="" class="img-fluid social_img">
+                                </button>
+                                <button class="btn btn_socials">
+                                    <img src="./assets/img/insta_logo.svg" alt="" class="img-fluid social_img">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="footer_right">
+                            <div class="footer_right_element">
+                                <p class="footer_title">Website Links</p>
+                                <div class="footer_link_box">
+                                    <button class="btn btn_footer_links">Buy Gift Cards</button>
+                                    <button class="btn btn_footer_links">Sell gift cards</button>
+                                    <button class="btn btn_footer_links">About Us</button>
+                                </div>
+                            </div>
+                            <div class="footer_right_element">
+                                <p class="footer_title">Company Links</p>
+                                <div class="footer_link_box">
+                                    <button class="btn btn_footer_links">Contact Us</button>
+                                    <button class="btn btn_footer_links">Login</button>
+                                    <button class="btn btn_footer_links">Register</button>
+                                </div>
+                            </div>
+                            <div class="footer_right_element wm_100">
+                                <p class="footer_title">Legals</p>
+                                <div class="footer_link_box fxr_mob">
+                                    <button class="btn btn_footer_links">Terms & Conditions</button>
+                                    <button class="btn btn_footer_links">Privacy Policy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_center">
+                        <div class="footer_divider"></div>
+                    </div>
+                    <div class="footer_bottom">
+                        <p class="footer_copyright">© Copyright 2025. All rights reserved by <span>Finndealz.com.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
