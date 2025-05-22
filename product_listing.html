@@ -328,18 +328,474 @@
 
 
 
-
         <div class="pls2">
             <div class="container">
                 <div class="pls2_main">
                     <div class="pls2_l">
+                        <div class="filter_box desktop_none" onclick="showFilterDrop(this)">
+                            <p class="filter_box_text">Filter Products</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="initial" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6.46154 12H17.5385M4 7H20M10.1538 17H13.8462" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="d-none" id="extecial" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M18.5 6L6.5 18M18.5 18L6.5 6" stroke="#8AB820" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
                         <div class="pls2_l_main">
+                            
+                            <div class="search_box">
+                                <input type="text" class="input_search" placeholder="Search products">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M16.927 17.0401L20.4001 20.4001M19.2801 11.4401C19.2801 15.77 15.77 19.2801 11.4401 19.2801C7.11019 19.2801 3.6001 15.77 3.6001 11.4401C3.6001 7.11019 7.11019 3.6001 11.4401 3.6001C15.77 3.6001 19.2801 7.11019 19.2801 11.4401Z" stroke="#242323" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
 
+                            <div class="option_drop_box">
+                                <botton class="btn btn_option" onclick="justDrop('option_drop', 'roter7', this)">
+                                    Discounts
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="roter7" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7 10L12.0008 14.58L17 10" stroke="#636363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </botton>
+                                <div class="option_drop_div" id="option_drop">
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            10% and under
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            10% - 20%
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            20% - 30%
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            30%+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option_drop_box">
+                                <botton class="btn btn_option" onclick="justDrop('option_drop2', 'roter8', this)">
+                                    Categories
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="roter8" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7 10L12.0008 14.58L17 10" stroke="#636363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </botton>
+                                <div class="option_drop_div" id="option_drop2">
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            10% and under
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            10% - 20%
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            20% - 30%
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            30%+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option_drop_box">
+                                <botton class="btn btn_option" onclick="justDrop('option_drop3', 'roter9', this)">
+                                    By Region
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="roter9" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7 10L12.0008 14.58L17 10" stroke="#636363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </botton>
+                                <div class="option_drop_div d-none" id="option_drop3">
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            10% and under
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            10% - 20%
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            20% - 30%
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_new">
+                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        <label class="form-check-label" for="checkDefault">
+                                            30%+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="pls2_r">
-                        <div class="pls2_r_top"></div>
-                        <div class="pls2_r_bottom"></div>
+                        <div class="pls2_r_top">
+                            <div class="pls2_r_top_l">
+                                <p class="pls2_r_top_l_results_text">
+                                    Showing 18 - 27 of <span>273</span> Results
+                                </p>
+                            </div>
+                            <div class="pls2_r_top_r">
+                                <div class="sort_drop_box">
+                                    <botton class="btn btn_sort" onclick="justDrop('sort_drop', 'roter5', this)">
+                                        <div class="btn_sort_inner">
+                                            <p>Sort By: <span>Discount</span></p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="roter5" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M7 10L12.0008 14.58L17 10" stroke="#636363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </botton>
+                                    <div class="sort_drop_div d-none" id="sort_drop">
+                                        <button class="btn btn_sort_btn active">High to Low</button>
+                                        <button class="btn btn_sort_btn">Low to High</button>
+                                    </div>
+                                </div>
+                                <div class="sort_drop_box">
+                                    <botton class="btn btn_sort" onclick="justDrop('sort_drop_price', 'roter6', this)">
+                                        <div class="btn_sort_inner">
+                                            <p>Sort By: <span>Price</span></p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="roter6" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M7 10L12.0008 14.58L17 10" stroke="#636363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </botton>
+                                    <div class="sort_drop_div d-none" id="sort_drop_price">
+                                        <button class="btn btn_sort_btn active">High to Low</button>
+                                        <button class="btn btn_sort_btn">Low to High</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pls2_r_bottom">
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_card">
+                                <div class="product_card_top">
+                                    <div class="product_card_image" style="background: url(./assets/img/product_card_image.png);">
+                                        <div class="product_card_discount_box">
+                                            <p class="pcd_text">UP TO 10% OFF</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card_footer">
+                                    <div class="pcf_l">
+                                        <p class="product_card_title">Drummond Golf</p>
+                                        <p class="product_card_subtitle">26 cards</p>
+                                    </div>
+                                    <div class="pcf_r">
+                                        <button class="btn btn_global3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M15.5999 8.96215C15.5999 10.9504 13.9881 12.5621 11.9999 12.5621C10.0117 12.5621 8.3999 10.9504 8.3999 8.96215M4.72717 21.5621H19.2726C20.5579 21.5621 21.5999 20.5396 21.5999 19.2781L20.109 5.96212C20.109 4.70069 19.067 3.6781 17.7817 3.6781H5.92717C4.64186 3.6781 3.5999 4.70069 3.5999 5.96212L2.3999 19.2781C2.3999 20.5396 3.44186 21.5621 4.72717 21.5621Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination_box">
+                            <button class="btn btn_pagination">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M15.7998 17L10.7998 12L15.7998 7" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="pagination_item">
+                                <div class="paginatioin_main">
+                                    <p class="pagination_number">1</p>
+                                </div>
+                            </div>
+                            <div class="pagination_item">
+                                <div class="paginatioin_main">
+                                    <p class="pagination_number">2</p>
+                                </div>
+                            </div>
+                            <div class="pagination_item active">
+                                <div class="paginatioin_main">
+                                    <p class="pagination_number">3</p>
+                                </div>
+                            </div>
+                            <div class="pagination_item">
+                                <div class="paginatioin_main">
+                                    <p class="pagination_number">4</p>
+                                </div>
+                            </div>
+                            <div class="pagination_item">
+                                <div class="paginatioin_main">
+                                    <p class="pagination_number">5</p>
+                                </div>
+                            </div>
+                            <button class="btn btn_pagination">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M10.7998 7L15.7998 12L10.7998 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

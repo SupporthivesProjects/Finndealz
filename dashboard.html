@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finndealz</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/css/owl.carousel.css">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="fixed-top" id="header">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_center">
+                        <button class="btn btn_header_link active">
+                            Shop Gift Cards
+                        </button>
+                        <button class="btn btn_header_link">
+                            Sell gift cards
+                        </button>
+                        <button class="btn btn_header_link">
+                            About Us
+                        </button>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                    </div>
+                    <div class="header_right">
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter1', this)">
+                                GBP £
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter1" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 10L12.0008 14.58L17 10" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop active">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header_drop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3.23767 19.5C4.56308 17.2892 7.46795 15.7762 11.9999 15.7762C16.5319 15.7762 19.4368 17.2892 20.7622 19.5M15.5999 8.1C15.5999 10.0882 13.9882 11.7 11.9999 11.7C10.0117 11.7 8.39995 10.0882 8.39995 8.1C8.39995 6.11177 10.0117 4.5 11.9999 4.5C13.9882 4.5 15.5999 6.11177 15.5999 8.1Z" stroke="#242323" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="cart_drop_container">
+                            <button class="btn btn_header_drop pos_rel" onclick="justDrop('cart_drop', 'roter2', this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15.6 8.34215C15.6 10.3304 13.9882 11.9422 12 11.9422C10.0118 11.9422 8.40002 10.3304 8.40002 8.34215M4.7273 20.9422H19.2728C20.5581 20.9422 21.6 19.9196 21.6 18.6581L20.1091 5.34212C20.1091 4.08069 19.0672 3.05811 17.7818 3.05811H5.9273C4.64198 3.05811 3.60002 4.08069 3.60002 5.34212L2.40002 18.6581C2.40002 19.9196 3.44198 20.9422 4.7273 20.9422Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <h1 class="cart_title">Shopping Cart</h1>
+                                <div class="cart_item_outer">
+                                    <div class="cart_item">
+                                        <div class="cart_item_left">
+                                            <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                        </div>
+                                        <div class="cart_item_center">
+                                            <div class="cart_item_center_top">
+                                                <p class="cart_item_price">$10.00</p>
+                                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                                            </div>
+                                            <div class="cart_item_center_bottom">
+                                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="cart_item_right">
+                                            <div class="item_inc_dec_box">
+                                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num')">
+                                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                                </button>
+                                                <input type="number" class="inc_dec_num" id="inc_dec_num" value="1">
+                                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num')">
+                                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                                </button>
+                                            </div>
+                                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_total">
+                                        <p class="cart_total_text">RRP</p>
+                                        <p class="cart_total_text">£379.00</p>
+                                    </div>
+
+                                    <div class="cart_item_total2">
+                                        <p class="cart_total_text1">Total</p>
+                                        <p class="cart_total_text1">£379.00</p>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn btn_global_green mx-auto">
+                                    <p class="btn_global_text">Checkout</p>
+                                    <span class="btn_global_green_inner">
+                                        <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <div class="cart_menu">
+                            <button class="btn btn_header_drop pos_rel p-0" onclick="justDrop('cart_drop', 'roter3', this)" style="border: 0px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15.6 8.34215C15.6 10.3304 13.9882 11.9422 12 11.9422C10.0118 11.9422 8.40002 10.3304 8.40002 8.34215M4.7273 20.9422H19.2728C20.5581 20.9422 21.6 19.9196 21.6 18.6581L20.1091 5.34212C20.1091 4.08069 19.0672 3.05811 17.7818 3.05811H5.9273C4.64198 3.05811 3.60002 4.08069 3.60002 5.34212L2.40002 18.6581C2.40002 19.9196 3.44198 20.9422 4.7273 20.9422Z" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header_mobo_center">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo_mobo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link_mobo">
+                    Shop Gift Cards
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Sell Gift Cards
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    About us
+                </button>
+                <button class="btn btn_header_link_mobo active">
+                    Contact Us
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Login/Register
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop mx-auto"
+                        onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Shopping Cart</h1>
+                <div class="cart_item_outer">
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item_total">
+                        <p class="cart_total_text">RRP</p>
+                        <p class="cart_total_text">£379.00</p>
+                    </div>
+
+                    <div class="cart_item_total2">
+                        <p class="cart_total_text1">Total</p>
+                        <p class="cart_total_text1">£379.00</p>
+                    </div>
+                </div>
+                <div class="cart_btn_grp">
+                    <button class="btn btn_global_dark" onclick="closeMobileCart()">
+                        <p class="btn_global_text2">Close Cart</p>
+                        <span class="btn_global_dark_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                    <button class="btn btn_global_green">
+                        <p class="btn_global_text">Checkout</p>
+                        <span class="btn_global_green_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="product_listing">
+        <!-- Product Listing Section One Start -->
+        <div class="pls1">
+            <div class="dash_inner">
+                <div class="container">
+                    <div class="dash_main">
+                        <div class="dash_left">
+                            <div class="dash_left_box mobile_none">
+                                <h1 class="dash_left_title">My Account</h1>
+                                <div class="dash_tab_btn_panel" id="v-pills-tab" role="tablist">
+                                    <button class="btn btn_dash active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                        Dashboard
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                            <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17158 0.464466C6.97632 0.269203 6.65974 0.269203 6.46448 0.464466C6.26921 0.659728 6.26921 0.97631 6.46448 1.17157L9.2929 4L6.46448 6.82843C6.26921 7.02369 6.26921 7.34027 6.46448 7.53553C6.65974 7.7308 6.97632 7.7308 7.17158 7.53553L10.3536 4.35355ZM0.390625 4L0.390625 4.5L10 4.5L10 4L10 3.5L0.390625 3.5L0.390625 4Z" fill="#242323"/>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn_dash" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                        Account Details
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                            <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17158 0.464466C6.97632 0.269203 6.65974 0.269203 6.46448 0.464466C6.26921 0.659728 6.26921 0.97631 6.46448 1.17157L9.2929 4L6.46448 6.82843C6.26921 7.02369 6.26921 7.34027 6.46448 7.53553C6.65974 7.7308 6.97632 7.7308 7.17158 7.53553L10.3536 4.35355ZM0.390625 4L0.390625 4.5L10 4.5L10 4L10 3.5L0.390625 3.5L0.390625 4Z" fill="#242323"/>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn_dash" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
+                                        Billing Details
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                            <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17158 0.464466C6.97632 0.269203 6.65974 0.269203 6.46448 0.464466C6.26921 0.659728 6.26921 0.97631 6.46448 1.17157L9.2929 4L6.46448 6.82843C6.26921 7.02369 6.26921 7.34027 6.46448 7.53553C6.65974 7.7308 6.97632 7.7308 7.17158 7.53553L10.3536 4.35355ZM0.390625 4L0.390625 4.5L10 4.5L10 4L10 3.5L0.390625 3.5L0.390625 4Z" fill="#242323"/>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn_dash" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                        Order History
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                            <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17158 0.464466C6.97632 0.269203 6.65974 0.269203 6.46448 0.464466C6.26921 0.659728 6.26921 0.97631 6.46448 1.17157L9.2929 4L6.46448 6.82843C6.26921 7.02369 6.26921 7.34027 6.46448 7.53553C6.65974 7.7308 6.97632 7.7308 7.17158 7.53553L10.3536 4.35355ZM0.390625 4L0.390625 4.5L10 4.5L10 4L10 3.5L0.390625 3.5L0.390625 4Z" fill="#242323"/>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn_dash">
+                                        Sign Out
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                            <path d="M10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17158 0.464466C6.97632 0.269203 6.65974 0.269203 6.46448 0.464466C6.26921 0.659728 6.26921 0.97631 6.46448 1.17157L9.2929 4L6.46448 6.82843C6.26921 7.02369 6.26921 7.34027 6.46448 7.53553C6.65974 7.7308 6.97632 7.7308 7.17158 7.53553L10.3536 4.35355ZM0.390625 4L0.390625 4.5L10 4.5L10 4L10 3.5L0.390625 3.5L0.390625 4Z" fill="#242323"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dash_left_box_mobo desktop_none">
+                                <h1 class="dash_left_title">My Account</h1>
+                                <div class="dash_drop_mobo_container">
+                                    <button class="btn btn_dash_drop" onclick="dash_drop_mob('btn_dash_drop_div', 'rome')">
+                                        <div class="btn_dash_drop_lt">
+                                            <img src="./assets/img/ddic1.svg" alt="" class="img-fluid dash_drop_lt_im" id="dash_drop_lt_im">
+                                            <p class="dash_drop_lt_text" id="dash_drop_lt_text">Dashboard</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="rome" width="8" height="11" viewBox="0 0 8 11" fill="none">
+                                            <path d="M3.64645 10.1583C3.84171 10.3535 4.15829 10.3535 4.35355 10.1583L7.53553 6.97627C7.7308 6.78101 7.7308 6.46442 7.53553 6.26916C7.34027 6.0739 7.02369 6.0739 6.82843 6.26916L4 9.09759L1.17157 6.26916C0.976311 6.0739 0.659729 6.0739 0.464466 6.26916C0.269204 6.46443 0.269204 6.78101 0.464466 6.97627L3.64645 10.1583ZM4 0.195312L3.5 0.195313L3.5 9.8047L4 9.8047L4.5 9.8047L4.5 0.195312L4 0.195312Z" fill="#242323"/>
+                                          </svg>
+                                    </button>
+                                    <div class="btn_dash_drop_div d-none" id="btn_dash_drop_div">
+                                        <div class="dash_tab_btn_panel" id="v-pills-tab" role="tablist">
+                                            <button class="btn btn_dash_drop_inner active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="dash_drop_mob('btn_dash_drop_div', 'rome', 'Dashboard', 1, this)">
+                                                <div class="btn_dash_drop_lt">
+                                                    <img src="./assets/img/ddic1.svg" alt="" class="img-fluid dash_drop_lt_im" id="">
+                                                    <p class="dash_drop_lt_text" id="">Dashboard</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+                                                    <path d="M10.1583 4.85355C10.3535 4.65829 10.3535 4.34171 10.1583 4.14645L6.97627 0.964466C6.78101 0.769203 6.46442 0.769203 6.26916 0.964466C6.0739 1.15973 6.0739 1.47631 6.26916 1.67157L9.09759 4.5L6.26916 7.32843C6.0739 7.52369 6.0739 7.84027 6.26916 8.03553C6.46443 8.2308 6.78101 8.2308 6.97627 8.03553L10.1583 4.85355ZM0.195312 4.5L0.195313 5L9.8047 5L9.8047 4.5L9.8047 4L0.195312 4L0.195312 4.5Z" fill="#242323"/>
+                                                </svg>
+                                            </button>
+                                            <button class="btn btn_dash_drop_inner" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="dash_drop_mob('btn_dash_drop_div', 'rome', 'Account Details', 2, this)">
+                                                <div class="btn_dash_drop_lt">
+                                                    <img src="./assets/img/ddic2.svg" alt="" class="img-fluid dash_drop_lt_im" id="">
+                                                    <p class="dash_drop_lt_text" id="">Account Details</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+                                                    <path d="M10.1583 4.85355C10.3535 4.65829 10.3535 4.34171 10.1583 4.14645L6.97627 0.964466C6.78101 0.769203 6.46442 0.769203 6.26916 0.964466C6.0739 1.15973 6.0739 1.47631 6.26916 1.67157L9.09759 4.5L6.26916 7.32843C6.0739 7.52369 6.0739 7.84027 6.26916 8.03553C6.46443 8.2308 6.78101 8.2308 6.97627 8.03553L10.1583 4.85355ZM0.195312 4.5L0.195313 5L9.8047 5L9.8047 4.5L9.8047 4L0.195312 4L0.195312 4.5Z" fill="#242323"/>
+                                                </svg>
+                                            </button>
+                                            <button class="btn btn_dash_drop_inner" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="dash_drop_mob('btn_dash_drop_div', 'rome', 'Billing Details', 3, this)">
+                                                <div class="btn_dash_drop_lt">
+                                                    <img src="./assets/img/ddic3.svg" alt="" class="img-fluid dash_drop_lt_im" id="">
+                                                    <p class="dash_drop_lt_text" id="">Billing Details</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+                                                    <path d="M10.1583 4.85355C10.3535 4.65829 10.3535 4.34171 10.1583 4.14645L6.97627 0.964466C6.78101 0.769203 6.46442 0.769203 6.26916 0.964466C6.0739 1.15973 6.0739 1.47631 6.26916 1.67157L9.09759 4.5L6.26916 7.32843C6.0739 7.52369 6.0739 7.84027 6.26916 8.03553C6.46443 8.2308 6.78101 8.2308 6.97627 8.03553L10.1583 4.85355ZM0.195312 4.5L0.195313 5L9.8047 5L9.8047 4.5L9.8047 4L0.195312 4L0.195312 4.5Z" fill="#242323"/>
+                                                </svg>
+                                            </button>
+                                            <button class="btn btn_dash_drop_inner" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" onclick="dash_drop_mob('btn_dash_drop_div', 'rome', 'Order History', 4, this)">
+                                                <div class="btn_dash_drop_lt">
+                                                    <img src="./assets/img/ddic4.svg" alt="" class="img-fluid dash_drop_lt_im" id="">
+                                                    <p class="dash_drop_lt_text" id="">Order History</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+                                                    <path d="M10.1583 4.85355C10.3535 4.65829 10.3535 4.34171 10.1583 4.14645L6.97627 0.964466C6.78101 0.769203 6.46442 0.769203 6.26916 0.964466C6.0739 1.15973 6.0739 1.47631 6.26916 1.67157L9.09759 4.5L6.26916 7.32843C6.0739 7.52369 6.0739 7.84027 6.26916 8.03553C6.46443 8.2308 6.78101 8.2308 6.97627 8.03553L10.1583 4.85355ZM0.195312 4.5L0.195313 5L9.8047 5L9.8047 4.5L9.8047 4L0.195312 4L0.195312 4.5Z" fill="#242323"/>
+                                                </svg>
+                                            </button>
+                                            <button class="btn btn_dash_drop_inner" onclick="dash_drop_mob('btn_dash_drop_div', 'rome', 'Sign Out', 5, this)">
+                                                <div class="btn_dash_drop_lt">
+                                                    <img src="./assets/img/ddic5.svg" alt="" class="img-fluid dash_drop_lt_im" id="">
+                                                    <p class="dash_drop_lt_text" id="">Sign Out</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="9" viewBox="0 0 11 9" fill="none">
+                                                    <path d="M10.1583 4.85355C10.3535 4.65829 10.3535 4.34171 10.1583 4.14645L6.97627 0.964466C6.78101 0.769203 6.46442 0.769203 6.26916 0.964466C6.0739 1.15973 6.0739 1.47631 6.26916 1.67157L9.09759 4.5L6.26916 7.32843C6.0739 7.52369 6.0739 7.84027 6.26916 8.03553C6.46443 8.2308 6.78101 8.2308 6.97627 8.03553L10.1583 4.85355ZM0.195312 4.5L0.195313 5L9.8047 5L9.8047 4.5L9.8047 4L0.195312 4L0.195312 4.5Z" fill="#242323"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash_right">
+                            <div class="tab-content dash_tab_changer_panel" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                    <div class="dash_right_my_account">
+                                        <h1 class="dash_title">Welcome back John Smith</h1>
+                                        <p class="dash_pre_subtitle">Not John Smith? <span>Sign out here</span></p>
+                                        <p class="dash_subtitle">Lorem ipsum dolor sit amet consectetur. Ut pulvinar id id commodo vitae. Ornare non elit arcu arcu diam mattis consequat amet in. Ante enim dictum quis in proin.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                    <div class="dash_right_acc_details">
+                                        <h1 class="dash_title2">Account Details</h1>
+                                        <p class="dash_subtitle2">Lorem ipsum dolor sit amet consectetur. Ut pulvinar id id commodo vitae. Ornare non elit arcu arcu diam mattis consequat amet in. Ante enim dictum quis in proin.</p>
+                                        
+                                        <form action="">
+                                            <div class="dash_acc_details_form">
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="First Name" id="">
+                                                </div>
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="Last Name" id="">
+                                                </div>
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="Email Address" id="">
+                                                </div>
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="Phone Number" id="">
+                                                </div>
+                                                <div class="input_div">
+                                                    <div class="eye_input_div">
+                                                        <input type="password" class="form-control input_global" placeholder="New Password" id="password">
+                                                        <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon"
+                                                            onclick="togglePassword('password', this)">
+                                                    </div>
+                                                </div>
+                                                <div class="input_div">
+                                                    <div class="eye_input_div">
+                                                        <input type="password" class="form-control input_global" placeholder="Confirm New Password" id="password1">
+                                                        <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon"
+                                                            onclick="togglePassword('password1', this)">
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn_global">
+                                                    Save changes
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                        
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                                    <div class="dash_right_acc_details">
+                                        <h1 class="dash_title2">Billing Details</h1>
+                                        <p class="dash_subtitle2">Lorem ipsum dolor sit amet consectetur. Ut pulvinar id id commodo vitae. Ornare non elit arcu arcu diam mattis consequat amet in. Ante enim dictum quis in proin.</p>
+                                        
+                                        <form action="">
+                                            <div class="dash_acc_details_form">
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="Address Line 1" id="">
+                                                </div>
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="Address Line 2" id="">
+                                                </div>
+                                                <div class="input_div2">
+                                                    <select class="form-select select_global" aria-label="Default select example">
+                                                        <option selected>Country</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="County" id="">
+                                                </div>
+                                                <div class="input_div">
+                                                    <input type="text" class="form-control input_global" placeholder="Town / City" id="">
+                                                </div>
+                                                <div class="input_div3">
+                                                    <input type="text" class="form-control input_global" placeholder="Zip / Postcode" id="">
+                                                    <button class="btn btn_global">
+                                                        Save&nbsp;changes
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                    <div class="dash_right_acc_details">
+                                        <h1 class="dash_title2">Order History</h1>
+                                        <p class="dash_subtitle2">Lorem ipsum dolor sit amet consectetur. Ut pulvinar id id commodo vitae. Ornare non elit arcu arcu diam mattis consequat amet in. Ante enim dictum quis in proin.</p>
+                                        <p class="drag_text desktop_none">*Drag left or right to view more*</p>
+                                        
+                                        <div class="order_table">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">
+                                                            <div class="order_table_head me-auto">
+                                                                <p class="order_table_title">Order</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="order_table_head ms-auto">
+                                                                <p class="order_table_title">Date</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="order_table_head ms-auto">
+                                                                <p class="order_table_title">Quantity</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <div class="order_table_head ms-auto">
+                                                                <p class="order_table_title">Total</p>
+                                                                <button class="btn p-0">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <path d="M13.4415 6.62732H22M13.4415 11.4421H19.5547M13.4415 16.2569H17.1094M5.80564 6V18M5.80564 18L2 14.3317M5.80564 18L9.7566 14.3317" stroke="#8AB820" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button class="btn btn_order_id" data-bs-toggle="modal" data-bs-target="#exampleModal">#10000000</button></td>
+                                                        <td><p class="order_table_text">April 01, 2025</p></td>
+                                                        <td><p class="order_table_text">x2</p></td>
+                                                        <td><p class="order_table_text">£250</p></td>
+                                                    </tr>
+                                                </tbody>
+                                                
+
+                                            </table>
+                                        </div>
+
+                                        <div class="pagination_box">
+                                            <button class="btn btn_pagination">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                    <path d="M15.7998 17L10.7998 12L15.7998 7" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <div class="pagination_item">
+                                                <div class="paginatioin_main">
+                                                    <p class="pagination_number">1</p>
+                                                </div>
+                                            </div>
+                                            <div class="pagination_item">
+                                                <div class="paginatioin_main">
+                                                    <p class="pagination_number">2</p>
+                                                </div>
+                                            </div>
+                                            <div class="pagination_item active">
+                                                <div class="paginatioin_main">
+                                                    <p class="pagination_number">3</p>
+                                                </div>
+                                            </div>
+                                            <div class="pagination_item">
+                                                <div class="paginatioin_main">
+                                                    <p class="pagination_number">4</p>
+                                                </div>
+                                            </div>
+                                            <div class="pagination_item">
+                                                <div class="paginatioin_main">
+                                                    <p class="pagination_number">5</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn_pagination">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                    <path d="M10.7998 7L15.7998 12L10.7998 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pls1_l_cut"></div>
+            <div class="dash_c_cut"></div>
+            <div class="pls1_r_cut"></div>
+        </div>
+        <!-- Product Listing Section One End -->
+
+
+
+
+        <!-- Modal -->
+    <div class="modal fade order_history_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ohd_dial">
+            <div class="modal-content ohd_cont">
+                <div class="modal-body ohd_body">
+                    <div class="ohd_main">
+                        <img type="button" src="./assets/img/cross_x_cart.svg" alt="" class="img-fluid mobile_none close_modal" data-bs-dismiss="modal" aria-label="Close">
+                        <img type="button" src="./assets/img/back_mod.svg" alt="" class="img-fluid desktop_none close_modal" data-bs-dismiss="modal" aria-label="Close">
+                        <div class="odh_mod_top">
+                            <p class="odh_mod_top_text">Order: #1234567</p>
+                            <div class="ohd_right_status">
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Order Placed</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">On Review</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Delivery Pending</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10 7L15 12L10 17" stroke="#242323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                                        <circle cx="13" cy="14" r="9.5" fill="url(#paint0_linear_6765_8448)"/>
+                                        <path d="M19.3516 10.305C19.3164 9.98984 19.1609 9.70741 18.9132 9.50934C18.4021 9.10073 17.6536 9.18412 17.245 9.69494L11.6254 16.7002L9.08892 14.1637C8.62603 13.7008 7.87312 13.7011 7.41022 14.1637C7.18599 14.388 7.0625 14.686 7.0625 15.003C7.0625 15.3199 7.18599 15.6182 7.41022 15.8422L10.8848 19.3167C11.109 19.5409 11.4071 19.6644 11.724 19.6644C11.746 19.6644 11.7682 19.6637 11.7898 19.6627C12.1265 19.6439 12.4405 19.4823 12.6507 19.2189L19.099 11.1778C19.2971 10.9301 19.3866 10.6202 19.3516 10.305Z" fill="#242323"/>
+                                        <defs>
+                                          <linearGradient id="paint0_linear_6765_8448" x1="22.5" y1="16.0781" x2="3.58626" y2="17.3555" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#C4EB80"/>
+                                            <stop offset="1" stop-color="#94D0C1"/>
+                                          </linearGradient>
+                                        </defs>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Order Delivered</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="odh_mod_bottom">
+                            <div class="order_history_panel_pop">
+                                <div class="sputnik desktop_none" style="margin-bottom: -6px;">
+                                    <div class="div_swipe_line_l"></div>
+                                    <p class="swipr_text">Swipe to scroll through the table</p>
+                                    <div class="div_swipe_line_r"></div>
+                                </div>
+                                <div class="order_history_panel_pop_table">
+                                    
+                                    <div class="table-responsive">
+                                        <div class="green_div">
+                                            <p class="gd_text">Purchase Overview</p>
+                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col"><p class="orhtp_title">#</p></th>
+                                                <th scope="col"><p class="orhtp_title">Product</p></th>
+                                                <!-- <th scope="col"><p class="orhtp_title text-center">Type</p></th> -->
+                                                <th scope="col"><p class="orhtp_title text-end">Qty</p></th>
+                                                <th scope="col"><p class="orhtp_title text-end">Price</p></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="orht_textp">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp">01.12.2023</p>
+                                                    </td>
+                                                    <!-- <td>
+                                                        <p class="orht_textp text-center">video</p>
+                                                    </td> -->
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="orht_textp">2</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp">01.12.2023</p>
+                                                    </td>
+                                                    <!-- <td>
+                                                        <p class="orht_textp text-center">video</p>
+                                                    </td> -->
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp2 text-end">£199.75</p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <div class="order_detail_chart">
+                                    <div class="green_div">
+                                        <p class="gd_text">Purchase Overview</p>
+                                    </div>
+                                    
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_detail_chart2">
+                                    <div class="green_div">
+                                        <p class="gd_text">Order Information</p>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_detail_chart2">
+                                    <div class="green_div">
+                                        <p class="gd_text">Order Information</p>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer_frame">
+            <div class="container">
+                <div class="footer_main">
+                    <div class="footer_top">
+                        <div class="footer_left">
+                            <div class="footer_left_top">
+                                <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                                <img src="./assets/img/master.svg" alt="" class="img-fluid master_img">
+                            </div>
+                            <div class="footer_left_center">
+                                <p class="footer_info"><span>Email:</span> info@Finndealz.com</p>
+                                <p class="footer_info"><span>Tel:</span> +971 4 388 8082, +971 56 256 6887</p>
+                                <p class="footer_info"><span>Address:</span> FINNOVATION COMMERCIAL BROKERS LLC, Office #312 Makateb Building Port Saeed, Deira, Dubai, UAE, Company Registration: 1136839</p>
+                            </div>
+                            <div class="footer_left_bottom">
+                                <button class="btn btn_socials">
+                                    <img src="./assets/img/face_logo.svg" alt="" class="img-fluid social_img">
+                                </button>
+                                <button class="btn btn_socials">
+                                    <img src="./assets/img/insta_logo.svg" alt="" class="img-fluid social_img">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="footer_right">
+                            <div class="footer_right_element">
+                                <p class="footer_title">Website Links</p>
+                                <div class="footer_link_box">
+                                    <button class="btn btn_footer_links">Buy Gift Cards</button>
+                                    <button class="btn btn_footer_links">Sell gift cards</button>
+                                    <button class="btn btn_footer_links">About Us</button>
+                                </div>
+                            </div>
+                            <div class="footer_right_element">
+                                <p class="footer_title">Company Links</p>
+                                <div class="footer_link_box">
+                                    <button class="btn btn_footer_links">Contact Us</button>
+                                    <button class="btn btn_footer_links">Login</button>
+                                    <button class="btn btn_footer_links">Register</button>
+                                </div>
+                            </div>
+                            <div class="footer_right_element wm_100">
+                                <p class="footer_title">Legals</p>
+                                <div class="footer_link_box fxr_mob">
+                                    <button class="btn btn_footer_links">Terms & Conditions</button>
+                                    <button class="btn btn_footer_links">Privacy Policy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_center">
+                        <div class="footer_divider"></div>
+                    </div>
+                    <div class="footer_bottom">
+                        <p class="footer_copyright">© Copyright 2025. All rights reserved by <span>Finndealz.com.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

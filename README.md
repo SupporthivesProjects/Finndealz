@@ -25,6 +25,6 @@ git remote add origin https://github.com/SupporthivesProjects/Finndealz.git<br>
 
 
 ● Pages Assigned :-<br>
-↳ Mehul:- Header, Footer, Home, My account, Account details, Order history, Order history details, Product Listing, Product Details<br>
+↳ Mehul:- Header, Footer, Home, My account, Account details, Billing Details, Order history, Order history details, Product Listing, Product Details<br>
 ↳ Sakshi:- Terms & Conditions, Error, Login, Sign up, Reset password, Payment success, Payment failure<br>
 ↳ Tirthak:- Checkout, Contact us, Sell Gift Card, About us
